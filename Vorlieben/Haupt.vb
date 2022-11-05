@@ -444,48 +444,6 @@ Public Class Haupt
 
     End Sub
 
-    Private Sub Zuruck_Click_1(sender As Object, e As EventArgs)
-
-        'prüfen wer spielt
-        If Durchgang1.Checked Then
-            path = path1
-        Else
-            path = path2
-        End If
-
-        'letzter Eintrag löschen in der eigenen Asuwertung
-        Dim Zeilen() As String
-        Dim Count As Integer = 0
-
-        Dim SR As IO.StreamReader = New IO.StreamReader(path)
-        While SR.Peek > -1
-            ReDim Preserve Zeilen(Count)
-            Zeilen(Count) = SR.ReadLine
-            Count += 1
-        End While
-        SR.Close()
-
-        Dim LastLine As String = Zeilen(UBound(Zeilen))
-
-        Kill(path)
-
-        Dim SW As IO.StreamWriter = New IO.StreamWriter(path)
-        For Durchlauf As Integer = 0 To UBound(Zeilen) - 1
-            SW.WriteLine(Zeilen(Durchlauf))
-        Next
-        SW.Close()
-
-
-        'Anzeige einen zurückspringen lassen
-        zaehler = zaehler - 1
-        VorliebeText.Text = vorlieben(zaehler)
-
-        'Progressbar einstellen und füllen
-
-        ProgressBar1.Value = ProgressBar1.Value - 1
-
-    End Sub
-
     Public Sub Auswerten_Click(sender As Object, e As EventArgs) Handles Auswerten.Click
 
         Dim i As Integer = 0
@@ -748,5 +706,45 @@ Public Class Haupt
             '  er ist unsicher -- wir gehen auf start zurück
         End If
 
+    End Sub
+
+    Private Sub Zuruck_Click(sender As Object, e As EventArgs) Handles Zuruck.Click
+        'prüfen wer spielt
+        If Durchgang1.Checked Then
+            path = path1
+        Else
+            path = path2
+        End If
+
+        'letzter Eintrag löschen in der eigenen Asuwertung
+        Dim Zeilen() As String
+        Dim Count As Integer = 0
+
+        Dim SR As IO.StreamReader = New IO.StreamReader(path)
+        While SR.Peek > -1
+            ReDim Preserve Zeilen(Count)
+            Zeilen(Count) = SR.ReadLine
+            Count += 1
+        End While
+        SR.Close()
+
+        Dim LastLine As String = Zeilen(UBound(Zeilen))
+
+        Kill(path)
+
+        Dim SW As IO.StreamWriter = New IO.StreamWriter(path)
+        For Durchlauf As Integer = 0 To UBound(Zeilen) - 1
+            SW.WriteLine(Zeilen(Durchlauf))
+        Next
+        SW.Close()
+
+
+        'Anzeige einen zurückspringen lassen
+        zaehler = zaehler - 1
+        VorliebeText.Text = vorlieben(zaehler)
+
+        'Progressbar einstellen und füllen
+
+        ProgressBar1.Value = ProgressBar1.Value - 1
     End Sub
 End Class
