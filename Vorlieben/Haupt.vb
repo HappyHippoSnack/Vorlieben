@@ -709,16 +709,18 @@ Public Class Haupt
     End Sub
 
     Private Sub Zuruck_Click(sender As Object, e As EventArgs) Handles Zuruck.Click
+
+        'letzter Eintrag löschen in der eigenen Asuwertung
+        Dim Zeilen() As String
+        Dim Count As Integer = 0
+
+
         'prüfen wer spielt
         If Durchgang1.Checked Then
             path = path1
         Else
             path = path2
         End If
-
-        'letzter Eintrag löschen in der eigenen Asuwertung
-        Dim Zeilen() As String
-        Dim Count As Integer = 0
 
         Dim SR As IO.StreamReader = New IO.StreamReader(path)
         While SR.Peek > -1
@@ -728,23 +730,31 @@ Public Class Haupt
         End While
         SR.Close()
 
-        Dim LastLine As String = Zeilen(UBound(Zeilen))
+        If zaehler <= 0 Then
 
-        Kill(path)
+            'nichts soll passieren wenn man am "start" ist
 
-        Dim SW As IO.StreamWriter = New IO.StreamWriter(path)
-        For Durchlauf As Integer = 0 To UBound(Zeilen) - 1
-            SW.WriteLine(Zeilen(Durchlauf))
-        Next
-        SW.Close()
+        ElseIf zaehler >= 0 Then
 
+            Dim LastLine As String = Zeilen(UBound(Zeilen))
 
-        'Anzeige einen zurückspringen lassen
-        zaehler = zaehler - 1
-        VorliebeText.Text = vorlieben(zaehler)
+            Kill(path)
 
-        'Progressbar einstellen und füllen
+            Dim SW As IO.StreamWriter = New IO.StreamWriter(path)
+            For Durchlauf As Integer = 0 To UBound(Zeilen) - 1
+                SW.WriteLine(Zeilen(Durchlauf))
+            Next
+            SW.Close()
 
-        ProgressBar1.Value = ProgressBar1.Value - 1
+            'Anzeige einen zurückspringen lassen
+            zaehler = zaehler - 1
+            VorliebeText.Text = vorlieben(zaehler)
+
+            'Progressbar einstellen und füllen
+
+            ProgressBar1.Value = ProgressBar1.Value - 1
+
+        End If
+
     End Sub
 End Class

@@ -91,4 +91,15 @@
         'Anzeigen der vorhandenen Antworten
         Antworten2.Text = count2
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If System.IO.File.Exists(path3) Then
+            My.Computer.FileSystem.DeleteFile(path3)
+        End If
+        If System.IO.File.Exists(path3) Then
+            Auswertung.Text = "Vorhanden"
+        End If
+        'Anzeigen der vorhandenen Antworten
+
+    End Sub
 End Class

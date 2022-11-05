@@ -206,7 +206,7 @@ Partial Class Haupt
         Me.Controls.Add(Me.Nein)
         Me.Controls.Add(Me.Vielleicht)
         Me.Controls.Add(Me.Ja)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MdiChildrenMinimizedAnchorBottom = False

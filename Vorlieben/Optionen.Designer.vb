@@ -37,9 +37,14 @@ Partial Class Optionen
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Gedultsprobe = New System.Windows.Forms.RadioButton()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Auswertung = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Person1loeschen
@@ -189,6 +194,46 @@ Partial Class Optionen
         Me.TextBox2.TabIndex = 12
         Me.TextBox2.Text = "© 0.1.7      S. Jäckel"
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox4.Controls.Add(Me.Auswertung)
+        Me.GroupBox4.Controls.Add(Me.Label2)
+        Me.GroupBox4.Controls.Add(Me.Button1)
+        Me.GroupBox4.Location = New System.Drawing.Point(519, 33)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(220, 100)
+        Me.GroupBox4.TabIndex = 8
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Auswertung"
+        '
+        'Auswertung
+        '
+        Me.Auswertung.AutoSize = True
+        Me.Auswertung.Location = New System.Drawing.Point(138, 40)
+        Me.Auswertung.Name = "Auswertung"
+        Me.Auswertung.Size = New System.Drawing.Size(65, 15)
+        Me.Auswertung.TabIndex = 3
+        Me.Auswertung.Text = "Unbekannt"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(6, 40)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(134, 15)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Auswertung vorhanden:"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(6, 71)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(163, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Auswertung löschen"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Optionen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -197,12 +242,12 @@ Partial Class Optionen
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.CancelButton = Me.Back
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Optionen"
@@ -213,6 +258,8 @@ Partial Class Optionen
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -231,4 +278,8 @@ Partial Class Optionen
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Gedultsprobe As RadioButton
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents Auswertung As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Button
 End Class
