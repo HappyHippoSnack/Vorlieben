@@ -65,7 +65,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Screenshot_2021_12_06_011629() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Screenshot 2021-12-06 011629", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Screenshot_2021_12_06_011629", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
