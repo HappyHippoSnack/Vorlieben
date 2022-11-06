@@ -667,7 +667,9 @@ Public Class Haupt
             Dim aString As String = Replace(value, " ", "_")
 
             'öffnen des browsers
-            Process.Start(("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" & " -inprivate"), "https://www.xnxx.com/search/" + aString)
+
+            Process.Start(("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"), "https://www.xnxx.com/search/" + aString)
+
         End If
 
     End Sub
@@ -716,6 +718,8 @@ Public Class Haupt
             Global.Vorlieben.Starter.Show()
             '  er ist unsicher -- wir gehen auf start zurück
         End If
+
+        System.IO.Directory.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\Cache\Cache_Data", True)
 
     End Sub
 

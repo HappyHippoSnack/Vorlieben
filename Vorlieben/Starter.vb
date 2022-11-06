@@ -192,6 +192,8 @@
 
     Private Sub Anleitung_Click(sender As Object, e As EventArgs) Handles Anleitung.Click
 
+
+        Process.Start(("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"), "-inprivate")
         Anleitung_Nutzer.Show()
         Me.Hide()
 

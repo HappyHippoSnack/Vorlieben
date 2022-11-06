@@ -148,9 +148,9 @@ Partial Class Starter
         '
         Me.Anleitung.Location = New System.Drawing.Point(37, 400)
         Me.Anleitung.Name = "Anleitung"
-        Me.Anleitung.Size = New System.Drawing.Size(67, 23)
+        Me.Anleitung.Size = New System.Drawing.Size(126, 23)
         Me.Anleitung.TabIndex = 6
-        Me.Anleitung.Text = "Anleitung"
+        Me.Anleitung.Text = "Anleitung / Help Me"
         Me.Anleitung.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Anleitung.UseVisualStyleBackColor = True
         '
