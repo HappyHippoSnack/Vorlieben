@@ -39,6 +39,7 @@ Partial Class Anleitung_Nutzer
         'RichTextBox1
         '
         Me.RichTextBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox1.Location = New System.Drawing.Point(28, 55)
         Me.RichTextBox1.Name = "RichTextBox1"
@@ -48,7 +49,7 @@ Partial Class Anleitung_Nutzer
         Me.RichTextBox1.TabIndex = 2
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
-        'Anleitung
+        'Anleitung_Nutzer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -57,7 +58,7 @@ Partial Class Anleitung_Nutzer
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.schliessen)
         Me.MaximizeBox = False
-        Me.Name = "Anleitung"
+        Me.Name = "Anleitung_Nutzer"
         Me.Text = "Anleitung"
         Me.ResumeLayout(False)
 

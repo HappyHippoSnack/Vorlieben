@@ -667,7 +667,7 @@ Public Class Haupt
             Dim aString As String = Replace(value, " ", "_")
 
             'öffnen des browsers
-            Process.Start(("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"), "https://www.xnxx.com/search/" + aString)
+            Process.Start(("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" & " -inprivate"), "https://www.xnxx.com/search/" + aString)
         End If
 
     End Sub
