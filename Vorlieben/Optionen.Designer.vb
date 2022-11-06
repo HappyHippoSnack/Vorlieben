@@ -40,7 +40,7 @@ Partial Class Optionen
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Auswertung = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Auswertungloeschen = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -199,7 +199,7 @@ Partial Class Optionen
         Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox4.Controls.Add(Me.Auswertung)
         Me.GroupBox4.Controls.Add(Me.Label2)
-        Me.GroupBox4.Controls.Add(Me.Button1)
+        Me.GroupBox4.Controls.Add(Me.Auswertungloeschen)
         Me.GroupBox4.Location = New System.Drawing.Point(519, 33)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(220, 100)
@@ -225,14 +225,14 @@ Partial Class Optionen
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Auswertung vorhanden:"
         '
-        'Button1
+        'Auswertungloeschen
         '
-        Me.Button1.Location = New System.Drawing.Point(6, 71)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(163, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Auswertung löschen"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Auswertungloeschen.Location = New System.Drawing.Point(6, 71)
+        Me.Auswertungloeschen.Name = "Auswertungloeschen"
+        Me.Auswertungloeschen.Size = New System.Drawing.Size(163, 23)
+        Me.Auswertungloeschen.TabIndex = 1
+        Me.Auswertungloeschen.Text = "Auswertung löschen"
+        Me.Auswertungloeschen.UseVisualStyleBackColor = True
         '
         'Optionen
         '
@@ -281,5 +281,5 @@ Partial Class Optionen
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents Auswertung As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Auswertungloeschen As Button
 End Class

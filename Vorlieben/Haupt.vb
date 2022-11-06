@@ -640,6 +640,17 @@ Public Class Haupt
             i = 0
         End If
 
+
+        If System.IO.File.Exists(path3) Then
+
+            'Auswertung direkt öffnen und dem nutzer anzeigen
+
+            Process.Start(("notepad.exe"), path3)
+        Else
+
+        End If
+
+
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -722,13 +733,19 @@ Public Class Haupt
             path = path2
         End If
 
-        Dim SR As IO.StreamReader = New IO.StreamReader(path)
-        While SR.Peek > -1
-            ReDim Preserve Zeilen(Count)
-            Zeilen(Count) = SR.ReadLine
-            Count += 1
-        End While
-        SR.Close()
+        'prüfen ob eine Datei da ist, in der man einen zurückspringen kann
+        If System.IO.File.Exists(path) Then
+
+            Dim SR As IO.StreamReader = New IO.StreamReader(path)
+            While SR.Peek > -1
+                ReDim Preserve Zeilen(Count)
+                Zeilen(Count) = SR.ReadLine
+                Count += 1
+            End While
+            SR.Close()
+        Else
+            'wenn die datei fehlt, soll nichts passieren
+        End If
 
         If zaehler <= 0 Then
 

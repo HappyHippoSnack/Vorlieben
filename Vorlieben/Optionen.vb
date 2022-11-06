@@ -68,8 +68,6 @@
             Haupt.Auswertung.ForeColor = Color.Red
         End If
 
-
-
         Haupt.Show()
         Me.Close()
     End Sub
@@ -77,6 +75,9 @@
     Private Sub Person1loeschen_Click(sender As Object, e As EventArgs) Handles Person1loeschen.Click
         If System.IO.File.Exists(path1) Then
             My.Computer.FileSystem.DeleteFile(path1)
+        Else
+            Antworten1.Text = "Fehlt"
+            Haupt.Auswertung.ForeColor = Color.Red
         End If
         count1 = 0
         'Anzeigen der vorhandenen Antworten
@@ -86,18 +87,26 @@
     Private Sub Person2loeschen_Click(sender As Object, e As EventArgs) Handles Person2loeschen.Click
         If System.IO.File.Exists(path2) Then
             My.Computer.FileSystem.DeleteFile(path2)
+        Else
+            Antworten2.Text = "Fehlt"
+            Haupt.Auswertung.ForeColor = Color.Red
         End If
         count2 = 0
         'Anzeigen der vorhandenen Antworten
         Antworten2.Text = count2
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Auswertungloeschen_Click(sender As Object, e As EventArgs) Handles Auswertungloeschen.Click
+
         If System.IO.File.Exists(path3) Then
             My.Computer.FileSystem.DeleteFile(path3)
         End If
+
         If System.IO.File.Exists(path3) Then
             Auswertung.Text = "Vorhanden"
+        Else
+            Auswertung.Text = "Fehlt"
+            Haupt.Auswertung.ForeColor = Color.Red
         End If
         'Anzeigen der vorhandenen Antworten
 
