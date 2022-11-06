@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>C:\Users\Gamer\Documents\GitHub\Vorlieben\Vorlieben\My Project\PublishProfiles\FolderProfile1.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Anleitung_Nutzer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Haupt.vb">
       <SubType>Form</SubType>
     </Compile>

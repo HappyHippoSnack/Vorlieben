@@ -34,6 +34,7 @@ Partial Class Starter
         Me.Einsteiger = New System.Windows.Forms.RadioButton()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Anleitung = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -137,17 +138,28 @@ Partial Class Starter
         Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(688, 422)
+        Me.TextBox2.Location = New System.Drawing.Point(688, 407)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 16)
         Me.TextBox2.TabIndex = 5
         Me.TextBox2.Text = "© 0.1.7      S. Jäckel"
+        '
+        'Anleitung
+        '
+        Me.Anleitung.Location = New System.Drawing.Point(37, 400)
+        Me.Anleitung.Name = "Anleitung"
+        Me.Anleitung.Size = New System.Drawing.Size(67, 23)
+        Me.Anleitung.TabIndex = 6
+        Me.Anleitung.Text = "Anleitung"
+        Me.Anleitung.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Anleitung.UseVisualStyleBackColor = True
         '
         'Starter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Anleitung)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Verstanden)
@@ -178,4 +190,5 @@ Partial Class Starter
     Friend WithEvents Einsteiger As RadioButton
     Friend WithEvents Timer1 As Timer
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Anleitung As Button
 End Class

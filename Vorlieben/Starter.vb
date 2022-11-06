@@ -190,5 +190,10 @@
 
     End Sub
 
+    Private Sub Anleitung_Click(sender As Object, e As EventArgs) Handles Anleitung.Click
 
+        Anleitung_Nutzer.Show()
+        Me.Hide()
+
+    End Sub
 End Class
