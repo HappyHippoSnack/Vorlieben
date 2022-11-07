@@ -94,7 +94,7 @@ Public Class Haupt
         vorlieben(5) = "Anal Dildo"
         vorlieben(6) = "Anal Fisting"
         vorlieben(7) = "Anal Gape"
-        vorlieben(8) = "Ass To Mouth"
+        vorlieben(8) = "Ass Eating"
         vorlieben(9) = "Assfingering"
         vorlieben(10) = "Ball Licking"
         vorlieben(11) = "Balloon"
@@ -103,15 +103,15 @@ Public Class Haupt
         vorlieben(14) = "Bend Over"
         vorlieben(15) = "Blindfolded"
         vorlieben(16) = "Blowjob"
-        vorlieben(17) = "Blowjob & Cum"
+        vorlieben(17) = "Erotic Kissing"
         vorlieben(18) = "Bondage"
-        vorlieben(19) = "Bound"
+        vorlieben(19) = "Shaving"
         vorlieben(20) = "Bukkake"
-        vorlieben(21) = "Buttplug"
+        vorlieben(21) = "Butt Plug"
         vorlieben(22) = "Cameltoe"
-        vorlieben(23) = "Caning"
+        vorlieben(23) = "Hier könnte Ihre Werbung stehen"
         vorlieben(24) = "Cum Eating Instructions"
-        vorlieben(25) = "Centerfold"
+        vorlieben(25) = "Cartoon"
         vorlieben(26) = "Chastity Belt"
         vorlieben(27) = "Clamp"
         vorlieben(28) = "Clothed Pissing"
@@ -119,7 +119,7 @@ Public Class Haupt
         vorlieben(30) = "Creampie"
         vorlieben(31) = "Crotchless Panties"
         vorlieben(32) = "Cuckold Humiliation"
-        vorlieben(33) = "Cum In Her Eyes"
+        vorlieben(33) = "Cum On Face"
         vorlieben(34) = "Cum In Mouth"
         vorlieben(35) = "Cum In Pussy"
         vorlieben(36) = "Cum On Ass"
@@ -132,7 +132,7 @@ Public Class Haupt
         vorlieben(43) = "Double Toying"
         vorlieben(44) = "Electrified"
         vorlieben(45) = "Enema"
-        vorlieben(46) = "Extreme Deepthroat"
+        vorlieben(46) = "Office Sex"
         vorlieben(47) = "Face Fuck"
         vorlieben(48) = "Face Sitting"
         vorlieben(49) = "Farting"
@@ -140,10 +140,10 @@ Public Class Haupt
         vorlieben(51) = "Fingering Orgasm"
         vorlieben(52) = "Fisting"
         vorlieben(53) = "Flogger Whip"
-        vorlieben(54) = "Fondling"
-        vorlieben(55) = "Foot Fetish"
+        vorlieben(54) = "Cum Dripping"
+        vorlieben(55) = "Footjob"
         vorlieben(56) = "Foursome"
-        vorlieben(57) = "Fur"
+        vorlieben(57) = "Furry"
         vorlieben(58) = "Gagged (Bit or Ball)"
         vorlieben(59) = "Gagging"
         vorlieben(60) = "Gangbang"
@@ -155,11 +155,11 @@ Public Class Haupt
         vorlieben(66) = "Gynecologist"
         vorlieben(67) = "Gyno Exam"
         vorlieben(68) = "Hair Pulling"
-        vorlieben(69) = "Hairy"
+        vorlieben(69) = "Virtual Reality"
         vorlieben(70) = "Handcuffed"
         vorlieben(71) = "Handjob"
         vorlieben(72) = "Humiliation"
-        vorlieben(73) = "Inflatable"
+        vorlieben(73) = "Inflatable Dildo"
         vorlieben(74) = "Insertion"
         vorlieben(75) = "Instructions"
         vorlieben(76) = "Jerking"
@@ -172,7 +172,7 @@ Public Class Haupt
         vorlieben(83) = "Nurse"
         vorlieben(84) = "Oiled"
         vorlieben(85) = "On Her Knees"
-        vorlieben(86) = "Open Pussy"
+        vorlieben(86) = "Ball Sucking"
         vorlieben(87) = "Peehole"
         vorlieben(88) = "Pegging"
         vorlieben(89) = "Pissed On"
@@ -181,21 +181,21 @@ Public Class Haupt
         vorlieben(92) = "Prostate Massage"
         vorlieben(93) = "Public Anal Sex"
         vorlieben(94) = "Pussy Stretching"
-        vorlieben(95) = "Pussy To Mouth"
+        vorlieben(95) = "Pussy Eating"
         vorlieben(96) = "Rectal Exam"
-        vorlieben(97) = "Remote"
+        vorlieben(97) = "Remote Toy"
         vorlieben(98) = "Satin"
         vorlieben(99) = "School Uniform"
         vorlieben(100) = "Self Fisting"
         vorlieben(101) = "Sex Tape"
         vorlieben(102) = "Share Wife"
         vorlieben(103) = "Slave / Master (Sub/Dom)"
-        vorlieben(104) = "Slave (Passiv)"
+        vorlieben(104) = "Forbidden Orgasm"
         vorlieben(105) = "Sniffing Panties"
         vorlieben(106) = "Spanked"
         vorlieben(107) = "Speculum"
         vorlieben(108) = "Spit"
-        vorlieben(109) = "Spreading"
+        vorlieben(109) = "Public Sex"
         vorlieben(110) = "Squirt"
         vorlieben(111) = "Strap-On"
         vorlieben(112) = "Submissive"
@@ -203,7 +203,7 @@ Public Class Haupt
         vorlieben(114) = "Teacher & Student"
         vorlieben(115) = "Tentacle"
         vorlieben(116) = "Threesome"
-        vorlieben(117) = "Tied Up"
+        vorlieben(117) = "Shower Sex"
         vorlieben(118) = "Tit Slap"
         vorlieben(119) = "Titjob"
         vorlieben(120) = "Toes"
@@ -216,8 +216,8 @@ Public Class Haupt
         vorlieben(127) = "Vacuum"
         vorlieben(128) = "Vaginal Cumshot"
         vorlieben(129) = "Vegetable"
-        vorlieben(130) = "Wanking"
-        vorlieben(131) = "Watersport"
+        vorlieben(130) = "Missionary"
+        vorlieben(131) = "Romantic Sex"
         vorlieben(132) = "Wax"
         vorlieben(133) = "Wet Panties"
         vorlieben(134) = "Zoophilie"
@@ -251,7 +251,6 @@ Public Class Haupt
 
         'prüfen ob man am ende angekommen ist
         If zaehler = 134 Then
-            MsgBox("Durchgang beendet, bitte die Person wechseln...", vbOKOnly, "Erfolg")
             ProgressBar1.Value = 0
             Dim jaCounter1 = 0
             Dim jaCounter2 = 0
@@ -300,6 +299,51 @@ Public Class Haupt
         ProgressBar1.Maximum = vorlieben.Length
         ProgressBar1.Value = ProgressBar1.Value + 1
 
+        'auswerten anzeigen
+        Dim count1 As Integer
+        Dim count2 As Integer
+
+        If System.IO.File.Exists(path1) And Durchgang1.Checked = True Then
+            count1 = System.IO.File.ReadLines(path1).Count()
+            If count1 > 134 Then
+
+                'Sagen das der durchgang fertig ist und den nächsten einschalten
+                MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
+                If Durchgang1.Checked Then
+                    Durchgang2.Checked = True
+                End If
+
+                If System.IO.File.Exists(path2) Then
+                    count2 = System.IO.File.ReadLines(path2).Count()
+                    If count2 > 134 Then
+                        Auswerten.Show()
+                    End If
+                End If
+
+            End If
+        End If
+
+        If System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
+            count2 = System.IO.File.ReadLines(path2).Count()
+            If count2 > 134 Then
+
+                'Sagen das der durchgang fertig ist und den nächsten einschalten
+                MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
+                If Durchgang2.Checked Then
+                    Durchgang1.Checked = True
+                    count2 = 0
+                End If
+
+                If System.IO.File.Exists(path1) Then
+                    count1 = System.IO.File.ReadLines(path1).Count()
+                    If count1 > 134 Then
+                        Auswerten.Show()
+                    End If
+                End If
+
+            End If
+        End If
+
 
     End Sub
 
@@ -327,7 +371,6 @@ Public Class Haupt
 
         'prüfen ob man am ende angekommen ist
         If zaehler = 134 Then
-            MsgBox("Durchgang beendet", vbOKOnly, "Erfolg")
             ProgressBar1.Value = 0
             Dim zaehler = 0
             Dim jaCounter1 = 0
@@ -372,11 +415,55 @@ Public Class Haupt
         ProgressBar1.Maximum = vorlieben.Length
         ProgressBar1.Value = ProgressBar1.Value + 1
 
+        'auswerten anzeigen
+        Dim count1 As Integer
+        Dim count2 As Integer
+
+        If System.IO.File.Exists(path1) And Durchgang1.Checked = True Then
+            count1 = System.IO.File.ReadLines(path1).Count()
+            If count1 > 134 Then
+
+                'Sagen das der durchgang fertig ist und den nächsten einschalten
+                MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
+                If Durchgang1.Checked Then
+                    Durchgang2.Checked = True
+                End If
+
+                If System.IO.File.Exists(path2) Then
+                    count2 = System.IO.File.ReadLines(path2).Count()
+                    If count2 > 134 Then
+                        Auswerten.Show()
+                    End If
+                End If
+
+            End If
+        End If
+
+        If System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
+            count2 = System.IO.File.ReadLines(path2).Count()
+            If count2 > 134 Then
+
+                'Sagen das der durchgang fertig ist und den nächsten einschalten
+                MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
+                If Durchgang2.Checked Then
+                    Durchgang1.Checked = True
+                End If
+
+                If System.IO.File.Exists(path1) Then
+                    count1 = System.IO.File.ReadLines(path1).Count()
+                    If count1 > 134 Then
+                        Auswerten.Show()
+                    End If
+                End If
+
+            End If
+        End If
+
     End Sub
 
     Private Sub Vielleicht_Click(sender As Object, e As EventArgs) Handles Vielleicht.Click
 
-        'buttontext anpassen und spielbereicht machen
+        'buttontext anpassen und spielbereit machen
         Ja.Text = "Ja"
         Vielleicht.Text = "Vielleicht"
         Nein.Text = "Nein"
@@ -398,7 +485,6 @@ Public Class Haupt
 
         'prüfen ob man am ende angekommen ist
         If zaehler = 134 Then
-            MsgBox("Durchgang beendet", vbOKOnly, "Erfolg")
             ProgressBar1.Value = 0
             Dim zaehler = 0
             Dim jaCounter1 = 0
@@ -442,6 +528,52 @@ Public Class Haupt
         ProgressBar1.Minimum = 0
         ProgressBar1.Maximum = vorlieben.Length
         ProgressBar1.Value = ProgressBar1.Value + 1
+
+        'auswerten anzeigen
+        Dim count1 As Integer
+        Dim count2 As Integer
+
+        If System.IO.File.Exists(path1) And Durchgang1.Checked = True Then
+            count1 = System.IO.File.ReadLines(path1).Count()
+            If count1 > 134 Then
+
+                'Sagen das der durchgang fertig ist und den nächsten einschalten
+                MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
+                If Durchgang1.Checked Then
+                    Durchgang2.Checked = True
+                End If
+
+                If System.IO.File.Exists(path2) Then
+                    count2 = System.IO.File.ReadLines(path2).Count()
+                    If count2 > 134 Then
+                        Auswerten.Show()
+                    End If
+                End If
+
+            End If
+        End If
+
+        If System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
+            count2 = System.IO.File.ReadLines(path2).Count()
+            If count2 > 134 Then
+
+                'Sagen das der durchgang fertig ist und den nächsten einschalten
+                MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
+                If Durchgang2.Checked Then
+                    Durchgang1.Checked = True
+                End If
+
+                If System.IO.File.Exists(path1) Then
+                    count1 = System.IO.File.ReadLines(path1).Count()
+                    If count1 > 134 Then
+                        Auswerten.Show()
+                    End If
+                End If
+
+            End If
+        End If
+
+
 
     End Sub
 
@@ -705,6 +837,7 @@ Public Class Haupt
 
         dr = MessageBox.Show("Wollen sie wirklich beenden?", "Sind sie sicher?", MessageBoxButtons.OKCancel)
         If dr = DialogResult.OK Then
+
             'Programm beenden und abgegebene Stimmen löschen
             If System.IO.File.Exists(path1) Then
                 My.Computer.FileSystem.DeleteFile(path1)
@@ -715,20 +848,23 @@ Public Class Haupt
             Global.Vorlieben.Optionen.Close()
             Global.Vorlieben.Starter.Close()
 
+            'verlauf history löschen
+
+            Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
+            TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
+            Process.Start(TskKill_Edge)
+
+            System.Threading.Thread.Sleep(400)
+
+            System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+
         ElseIf dr = DialogResult.Cancel Then
+
             Global.Vorlieben.Starter.Show()
             '  er ist unsicher -- wir gehen auf start zurück
         End If
 
-        'verlauf history löschen
 
-        Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
-        TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
-        Process.Start(TskKill_Edge)
-
-        System.Threading.Thread.Sleep(400)
-
-        System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
 
     End Sub
 

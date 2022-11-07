@@ -52,7 +52,7 @@ Partial Class Starter
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(348, 119)
+        Me.Label2.Location = New System.Drawing.Point(349, 103)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(67, 21)
         Me.Label2.TabIndex = 1
@@ -66,21 +66,23 @@ Partial Class Starter
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.CausesValidation = False
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.Location = New System.Drawing.Point(148, 143)
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.TextBox1.Location = New System.Drawing.Point(26, 141)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(502, 124)
+        Me.TextBox1.Size = New System.Drawing.Size(738, 116)
         Me.TextBox1.TabIndex = 2
-        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
+        Me.TextBox1.Text = "Kein Ja oder Nein Spamen!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Erster Gedanke ist IMMER Richtig!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Keine Angst, nur we" &
+    "nn beide Ja/ vielleicht sagen, wird es angezeigt." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Habt Spaß!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Verstanden
         '
-        Me.Verstanden.Location = New System.Drawing.Point(361, 400)
+        Me.Verstanden.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Verstanden.Location = New System.Drawing.Point(349, 407)
         Me.Verstanden.Name = "Verstanden"
-        Me.Verstanden.Size = New System.Drawing.Size(75, 23)
+        Me.Verstanden.Size = New System.Drawing.Size(104, 32)
         Me.Verstanden.TabIndex = 3
         Me.Verstanden.Text = "Verstanden"
         Me.Verstanden.UseVisualStyleBackColor = True
@@ -90,7 +92,7 @@ Partial Class Starter
         Me.GroupBox1.Controls.Add(Me.Extremist)
         Me.GroupBox1.Controls.Add(Me.Normal)
         Me.GroupBox1.Controls.Add(Me.Einsteiger)
-        Me.GroupBox1.Location = New System.Drawing.Point(298, 273)
+        Me.GroupBox1.Location = New System.Drawing.Point(304, 263)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox1.TabIndex = 4
@@ -142,16 +144,16 @@ Partial Class Starter
         Me.Version.Name = "Version"
         Me.Version.Size = New System.Drawing.Size(100, 16)
         Me.Version.TabIndex = 5
-        Me.Version.Text = "© 0.1.7      S. Jäckel"
+        Me.Version.Text = "Version"
         '
         'Anleitung
         '
-        Me.Anleitung.Location = New System.Drawing.Point(37, 400)
+        Me.Anleitung.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Anleitung.Location = New System.Drawing.Point(304, 369)
         Me.Anleitung.Name = "Anleitung"
-        Me.Anleitung.Size = New System.Drawing.Size(126, 23)
+        Me.Anleitung.Size = New System.Drawing.Size(200, 32)
         Me.Anleitung.TabIndex = 6
         Me.Anleitung.Text = "Anleitung / Help Me"
-        Me.Anleitung.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Anleitung.UseVisualStyleBackColor = True
         '
         'Starter

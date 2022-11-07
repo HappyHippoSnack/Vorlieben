@@ -96,12 +96,14 @@ Partial Class Haupt
         '
         'Auswerten
         '
-        Me.Auswerten.Location = New System.Drawing.Point(70, 421)
+        Me.Auswerten.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Auswerten.Location = New System.Drawing.Point(312, 290)
         Me.Auswerten.Name = "Auswerten"
-        Me.Auswerten.Size = New System.Drawing.Size(152, 25)
+        Me.Auswerten.Size = New System.Drawing.Size(196, 65)
         Me.Auswerten.TabIndex = 6
         Me.Auswerten.Text = "Auswerten"
         Me.Auswerten.UseVisualStyleBackColor = True
+        Me.Auswerten.Visible = False
         '
         'Durchgang1
         '
