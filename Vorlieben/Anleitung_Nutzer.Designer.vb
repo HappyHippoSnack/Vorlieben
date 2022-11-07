@@ -24,30 +24,33 @@ Partial Class Anleitung_Nutzer
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Anleitung_Nutzer))
         Me.schliessen = New System.Windows.Forms.Button()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'schliessen
         '
-        Me.schliessen.Location = New System.Drawing.Point(363, 396)
+        Me.schliessen.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.schliessen.Location = New System.Drawing.Point(361, 352)
         Me.schliessen.Name = "schliessen"
-        Me.schliessen.Size = New System.Drawing.Size(75, 23)
+        Me.schliessen.Size = New System.Drawing.Size(85, 31)
         Me.schliessen.TabIndex = 0
         Me.schliessen.Text = "Schließen"
         Me.schliessen.UseVisualStyleBackColor = True
         '
-        'RichTextBox1
+        'TextBox1
         '
-        Me.RichTextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.RichTextBox1.Location = New System.Drawing.Point(28, 55)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical
-        Me.RichTextBox1.Size = New System.Drawing.Size(760, 297)
-        Me.RichTextBox1.TabIndex = 2
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 113)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(776, 207)
+        Me.TextBox1.TabIndex = 3
+        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Anleitung_Nutzer
         '
@@ -55,15 +58,16 @@ Partial Class Anleitung_Nutzer
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.ControlBox = False
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.schliessen)
         Me.MaximizeBox = False
         Me.Name = "Anleitung_Nutzer"
         Me.Text = "Anleitung"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents schliessen As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents TextBox1 As TextBox
 End Class

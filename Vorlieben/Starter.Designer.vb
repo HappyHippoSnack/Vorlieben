@@ -33,7 +33,7 @@ Partial Class Starter
         Me.Normal = New System.Windows.Forms.RadioButton()
         Me.Einsteiger = New System.Windows.Forms.RadioButton()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Version = New System.Windows.Forms.TextBox()
         Me.Anleitung = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -133,16 +133,16 @@ Partial Class Starter
         Me.Einsteiger.Text = "Einsteiger (50)"
         Me.Einsteiger.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'Version
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(688, 407)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 16)
-        Me.TextBox2.TabIndex = 5
-        Me.TextBox2.Text = "© 0.1.7      S. Jäckel"
+        Me.Version.BackColor = System.Drawing.SystemColors.Control
+        Me.Version.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Version.Enabled = False
+        Me.Version.Location = New System.Drawing.Point(688, 407)
+        Me.Version.Name = "Version"
+        Me.Version.Size = New System.Drawing.Size(100, 16)
+        Me.Version.TabIndex = 5
+        Me.Version.Text = "© 0.1.7      S. Jäckel"
         '
         'Anleitung
         '
@@ -160,7 +160,7 @@ Partial Class Starter
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Anleitung)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Version)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Verstanden)
         Me.Controls.Add(Me.TextBox1)
@@ -189,6 +189,6 @@ Partial Class Starter
     Friend WithEvents Normal As RadioButton
     Friend WithEvents Einsteiger As RadioButton
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Version As TextBox
     Friend WithEvents Anleitung As Button
 End Class

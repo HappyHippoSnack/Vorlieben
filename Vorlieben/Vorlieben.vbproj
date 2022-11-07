@@ -8,6 +8,8 @@
     <MyType>WindowsForms</MyType>
     <ApplicationIcon>Herz- 1.ico</ApplicationIcon>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <Version>5.6.1</Version>
+    <Copyright>Sören Jäckel</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
