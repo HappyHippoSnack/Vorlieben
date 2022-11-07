@@ -719,7 +719,15 @@ Public Class Haupt
             '  er ist unsicher -- wir gehen auf start zurück
         End If
 
-        System.IO.Directory.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\Cache\Cache_Data", True)
+        'verlauf history löschen
+
+        Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
+        TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
+        Process.Start(TskKill_Edge)
+
+        System.Threading.Thread.Sleep(400)
+
+        System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
 
     End Sub
 
