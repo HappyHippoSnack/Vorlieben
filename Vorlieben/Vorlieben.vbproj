@@ -11,6 +11,7 @@
     <Version>5.6.1</Version>
     <Copyright>Sören Jäckel</Copyright>
     <AssemblyVersion>5.8.1.0</AssemblyVersion>
+    <RepositoryUrl>https://github.com/HappyHippoSnack/Vorlieben</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

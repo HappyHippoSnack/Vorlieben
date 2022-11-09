@@ -321,9 +321,7 @@ Public Class Haupt
                 End If
 
             End If
-        End If
-
-        If System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
+        ElseIf System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
             count2 = System.IO.File.ReadLines(path2).Count()
             If count2 > 134 Then
 
@@ -331,7 +329,6 @@ Public Class Haupt
                 MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
                 If Durchgang2.Checked Then
                     Durchgang1.Checked = True
-                    count2 = 0
                 End If
 
                 If System.IO.File.Exists(path1) Then
@@ -437,9 +434,7 @@ Public Class Haupt
                 End If
 
             End If
-        End If
-
-        If System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
+        ElseIf System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
             count2 = System.IO.File.ReadLines(path2).Count()
             If count2 > 134 Then
 
@@ -458,6 +453,7 @@ Public Class Haupt
 
             End If
         End If
+
 
     End Sub
 
@@ -551,9 +547,7 @@ Public Class Haupt
                 End If
 
             End If
-        End If
-
-        If System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
+        ElseIf System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
             count2 = System.IO.File.ReadLines(path2).Count()
             If count2 > 134 Then
 
@@ -571,6 +565,8 @@ Public Class Haupt
                 End If
 
             End If
+
+
         End If
 
 
