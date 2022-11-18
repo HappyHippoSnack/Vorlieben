@@ -16,14 +16,14 @@ Public Class Haupt
     'Dim path3 As String = Application.StartupPath + "Auswertung.txt"
 
     'array erzeugen welches 135 stellen hat, gefüll tmit allen kinks
-    Dim vorlieben(118) As String
+    Dim vorlieben(116) As String
 
 
     'array erzeugen welches 135 stellen hat für person 1 und den durchgang
-    Dim vorliebend1(118) As String
+    Dim vorliebend1(116) As String
 
     'array erzeugen welches 135 stellen hat für person 2 und den durchgang
-    Dim vorliebend2(118) As String
+    Dim vorliebend2(116) As String
 
     'einen zähler erzeugen der die kinks durchzählt und anhand der nummer weiß was gerade abgefragt wird
     Dim zaehler As Int32
@@ -39,7 +39,7 @@ Public Class Haupt
     Dim zurucksetzten As Int32
 
     'Anzahl an Abfragen/Kinks, hier anpassen wenn verändert.
-    Dim ZahlenCheck = 117
+    Dim ZahlenCheck = 115
 
 
 
@@ -113,12 +113,12 @@ Public Class Haupt
         vorlieben(16) = "Blowjob"
         vorlieben(17) = "Erotic Kissing"
         vorlieben(18) = "Bondage"
-        vorlieben(19) = "Shaving"
+        vorlieben(19) = "Shaved"
         vorlieben(20) = "Bukkake"
         vorlieben(21) = "Butt Plug"
         vorlieben(22) = "Cameltoe"
         vorlieben(23) = "Hier könnte Ihre Werbung stehen"
-        vorlieben(24) = "Cum Eating Instructions"
+        vorlieben(24) = "Tentacle"
         vorlieben(25) = "Cartoon"
         vorlieben(26) = "Chastity Belt"
         vorlieben(27) = "Clamp"
@@ -207,11 +207,9 @@ Public Class Haupt
         vorlieben(110) = "Squirt"
         vorlieben(111) = "Strap-On"
         vorlieben(112) = "Titjob"
-        vorlieben(113) = "Swollen Pussy"
+        vorlieben(113) = "Threesome"
         vorlieben(114) = "Tit Slap"
-        vorlieben(115) = "Tentacle"
-        vorlieben(116) = "Threesome"
-        vorlieben(117) = "Zoophilie"
+        vorlieben(115) = "Zoophilie"
 
 
 
@@ -842,7 +840,7 @@ Public Class Haupt
             TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
             Process.Start(TskKill_Edge)
 
-            System.Threading.Thread.Sleep(400)
+            System.Threading.Thread.Sleep(600)
 
             System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
 
