@@ -15,15 +15,15 @@ Public Class Haupt
     'Dim path2 As String = Application.StartupPath + "VorliebenDB2.txt"
     'Dim path3 As String = Application.StartupPath + "Auswertung.txt"
 
-    'array erzeugen welches 135 stellen hat
-    Dim vorlieben(135) As String
+    'array erzeugen welches 135 stellen hat, gefüll tmit allen kinks
+    Dim vorlieben(118) As String
 
 
-    'array erzeugen welches 135 stellen hat
-    Dim vorliebend1(135) As String
+    'array erzeugen welches 135 stellen hat für person 1 und den durchgang
+    Dim vorliebend1(118) As String
 
-    'array erzeugen welches 135 stellen hat
-    Dim vorliebend2(135) As String
+    'array erzeugen welches 135 stellen hat für person 2 und den durchgang
+    Dim vorliebend2(118) As String
 
     'einen zähler erzeugen der die kinks durchzählt und anhand der nummer weiß was gerade abgefragt wird
     Dim zaehler As Int32
@@ -39,7 +39,7 @@ Public Class Haupt
     Dim zurucksetzten As Int32
 
     'Anzahl an Abfragen/Kinks, hier anpassen wenn verändert.
-    Dim ZahlenCheck = 134
+    Dim ZahlenCheck = 117
 
 
 
@@ -123,7 +123,7 @@ Public Class Haupt
         vorlieben(26) = "Chastity Belt"
         vorlieben(27) = "Clamp"
         vorlieben(28) = "Clothed Pissing"
-        vorlieben(29) = "Clothed Sex"
+        vorlieben(29) = "Roleplay"
         vorlieben(30) = "Creampie"
         vorlieben(31) = "Crotchless Panties"
         vorlieben(32) = "Cuckold Humiliation"
@@ -135,7 +135,7 @@ Public Class Haupt
         vorlieben(38) = "Deepthroat"
         vorlieben(39) = "Diaper"
         vorlieben(40) = "Dirty Talk"
-        vorlieben(41) = "Doctor"
+        vorlieben(41) = "Doctor / Nurse"
         vorlieben(42) = "Doggystyle"
         vorlieben(43) = "Double Toying"
         vorlieben(44) = "Electrified"
@@ -148,36 +148,36 @@ Public Class Haupt
         vorlieben(51) = "Fingering Orgasm"
         vorlieben(52) = "Fisting"
         vorlieben(53) = "Flogger Whip"
-        vorlieben(54) = "Cum Dripping"
+        vorlieben(54) = "Wet Panties"
         vorlieben(55) = "Footjob"
         vorlieben(56) = "Foursome"
         vorlieben(57) = "Furry"
-        vorlieben(58) = "Gagged (Bit or Ball)"
+        vorlieben(58) = "Wax"
         vorlieben(59) = "Gagging"
         vorlieben(60) = "Gangbang"
         vorlieben(61) = "Gaping Hole"
         vorlieben(62) = "Gloryhole"
         vorlieben(63) = "Gloves"
-        vorlieben(64) = "Golden Shower"
+        vorlieben(64) = "Romantic Sex"
         vorlieben(65) = "Group Sex"
         vorlieben(66) = "Gynecologist"
-        vorlieben(67) = "Gyno Exam"
+        vorlieben(67) = "Missionary"
         vorlieben(68) = "Hair Pulling"
-        vorlieben(69) = "Virtual Reality"
+        vorlieben(69) = "Vegetable"
         vorlieben(70) = "Handcuffed"
         vorlieben(71) = "Handjob"
         vorlieben(72) = "Humiliation"
         vorlieben(73) = "Inflatable Dildo"
         vorlieben(74) = "Insertion"
-        vorlieben(75) = "Instructions"
-        vorlieben(76) = "Jerking"
-        vorlieben(77) = "Leashed"
+        vorlieben(75) = "Vaginal Cumshot"
+        vorlieben(76) = "Vacuum"
+        vorlieben(77) = "Urethra"
         vorlieben(78) = "Leather"
         vorlieben(79) = "Lingerie"
         vorlieben(80) = "Machine Fucking"
         vorlieben(81) = "Masturbating"
         vorlieben(82) = "No Panties"
-        vorlieben(83) = "Nurse"
+        vorlieben(83) = "Unshaved"
         vorlieben(84) = "Oiled"
         vorlieben(85) = "On Her Knees"
         vorlieben(86) = "Ball Sucking"
@@ -190,45 +190,29 @@ Public Class Haupt
         vorlieben(93) = "Public Anal Sex"
         vorlieben(94) = "Pussy Stretching"
         vorlieben(95) = "Pussy Eating"
-        vorlieben(96) = "Rectal Exam"
+        vorlieben(96) = "Underwater"
         vorlieben(97) = "Remote Toy"
-        vorlieben(98) = "Satin"
-        vorlieben(99) = "School Uniform"
+        vorlieben(98) = "Toys"
+        vorlieben(99) = "Shower Sex"
         vorlieben(100) = "Self Fisting"
         vorlieben(101) = "Sex Tape"
         vorlieben(102) = "Share Wife"
         vorlieben(103) = "Slave / Master (Sub/Dom)"
         vorlieben(104) = "Forbidden Orgasm"
         vorlieben(105) = "Sniffing Panties"
-        vorlieben(106) = "Spanked"
+        vorlieben(106) = "Human Toilet"
         vorlieben(107) = "Speculum"
         vorlieben(108) = "Spit"
         vorlieben(109) = "Public Sex"
         vorlieben(110) = "Squirt"
         vorlieben(111) = "Strap-On"
-        vorlieben(112) = "Submissive"
+        vorlieben(112) = "Titjob"
         vorlieben(113) = "Swollen Pussy"
-        vorlieben(114) = "Teacher & Student"
+        vorlieben(114) = "Tit Slap"
         vorlieben(115) = "Tentacle"
         vorlieben(116) = "Threesome"
-        vorlieben(117) = "Shower Sex"
-        vorlieben(118) = "Tit Slap"
-        vorlieben(119) = "Titjob"
-        vorlieben(120) = "Toes"
-        vorlieben(121) = "Human Toilet"
-        vorlieben(122) = "Torture"
-        vorlieben(123) = "Toys"
-        vorlieben(124) = "Underwater"
-        vorlieben(125) = "Unshaved"
-        vorlieben(126) = "Urethra"
-        vorlieben(127) = "Vacuum"
-        vorlieben(128) = "Vaginal Cumshot"
-        vorlieben(129) = "Vegetable"
-        vorlieben(130) = "Missionary"
-        vorlieben(131) = "Romantic Sex"
-        vorlieben(132) = "Wax"
-        vorlieben(133) = "Wet Panties"
-        vorlieben(134) = "Zoophilie"
+        vorlieben(117) = "Zoophilie"
+
 
 
 
