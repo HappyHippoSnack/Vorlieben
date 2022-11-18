@@ -25,13 +25,21 @@ Public Class Haupt
     'array erzeugen welches 135 stellen hat
     Dim vorliebend2(135) As String
 
-    'einen zähler erzeugen der nur zahlen enthält
+    'einen zähler erzeugen der die kinks durchzählt und anhand der nummer weiß was gerade abgefragt wird
     Dim zaehler As Int32
+    'Zähler erzeugen, welcher die abgegebenen JA stimmen zählt für Person 1
     Dim jaCounter1 As Int32
+    'Zähler erzeugen, welcher die abgegebenen JA stimmen zählt für Person 2
     Dim jaCounter2 As Int32
+    'Zähler erzeugen, welcher die abgegebenen NEIN stimmen zählt für Person 1
     Dim neinCounter1 As Int32
+    'Zähler erzeugen, welcher die abgegebenen NEIN stimmen zählt für Person 2
     Dim neinCounter2 As Int32
+    'Zurücksetzten löst aus, dass wenn eine 1 gesetzt ist, der vorgang gelöscht wird und man bei 0 anfangen muss (fehler sicherheit)
     Dim zurucksetzten As Int32
+
+    'Anzahl an Abfragen/Kinks, hier anpassen wenn verändert.
+    Dim ZahlenCheck = 134
 
 
 
@@ -39,7 +47,7 @@ Public Class Haupt
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        'zähler auf 1 setzten
+        'zähler alle auf 0 setzten
         Dim zaehler = 0
         Dim jaCounter1 = 0
         Dim jaCounter2 = 0
@@ -250,7 +258,7 @@ Public Class Haupt
         file.Close()
 
         'prüfen ob man am ende angekommen ist
-        If zaehler = 134 Then
+        If zaehler = ZahlenCheck Then
             ProgressBar1.Value = 0
             Dim jaCounter1 = 0
             Dim jaCounter2 = 0
@@ -305,7 +313,7 @@ Public Class Haupt
 
         If System.IO.File.Exists(path1) And Durchgang1.Checked = True Then
             count1 = System.IO.File.ReadLines(path1).Count()
-            If count1 > 134 Then
+            If count1 > ZahlenCheck Then
 
                 'Sagen das der durchgang fertig ist und den nächsten einschalten
                 MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
@@ -315,7 +323,7 @@ Public Class Haupt
 
                 If System.IO.File.Exists(path2) Then
                     count2 = System.IO.File.ReadLines(path2).Count()
-                    If count2 > 134 Then
+                    If count2 > ZahlenCheck Then
                         Auswerten.Show()
                     End If
                 End If
@@ -323,7 +331,7 @@ Public Class Haupt
             End If
         ElseIf System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
             count2 = System.IO.File.ReadLines(path2).Count()
-            If count2 > 134 Then
+            If count2 > ZahlenCheck Then
 
                 'Sagen das der durchgang fertig ist und den nächsten einschalten
                 MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
@@ -333,7 +341,7 @@ Public Class Haupt
 
                 If System.IO.File.Exists(path1) Then
                     count1 = System.IO.File.ReadLines(path1).Count()
-                    If count1 > 134 Then
+                    If count1 > ZahlenCheck Then
                         Auswerten.Show()
                     End If
                 End If
@@ -367,7 +375,7 @@ Public Class Haupt
         file.Close()
 
         'prüfen ob man am ende angekommen ist
-        If zaehler = 134 Then
+        If zaehler = ZahlenCheck Then
             ProgressBar1.Value = 0
             Dim zaehler = 0
             Dim jaCounter1 = 0
@@ -412,13 +420,13 @@ Public Class Haupt
         ProgressBar1.Maximum = vorlieben.Length
         ProgressBar1.Value = ProgressBar1.Value + 1
 
-        'auswerten anzeigen
+        'auswerten anzeigen wenn die kinks alle beantwortet wurden
         Dim count1 As Integer
         Dim count2 As Integer
 
         If System.IO.File.Exists(path1) And Durchgang1.Checked = True Then
             count1 = System.IO.File.ReadLines(path1).Count()
-            If count1 > 134 Then
+            If count1 > ZahlenCheck Then
 
                 'Sagen das der durchgang fertig ist und den nächsten einschalten
                 MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
@@ -428,7 +436,7 @@ Public Class Haupt
 
                 If System.IO.File.Exists(path2) Then
                     count2 = System.IO.File.ReadLines(path2).Count()
-                    If count2 > 134 Then
+                    If count2 > ZahlenCheck Then
                         Auswerten.Show()
                     End If
                 End If
@@ -436,7 +444,7 @@ Public Class Haupt
             End If
         ElseIf System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
             count2 = System.IO.File.ReadLines(path2).Count()
-            If count2 > 134 Then
+            If count2 > ZahlenCheck Then
 
                 'Sagen das der durchgang fertig ist und den nächsten einschalten
                 MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
@@ -446,7 +454,7 @@ Public Class Haupt
 
                 If System.IO.File.Exists(path1) Then
                     count1 = System.IO.File.ReadLines(path1).Count()
-                    If count1 > 134 Then
+                    If count1 > ZahlenCheck Then
                         Auswerten.Show()
                     End If
                 End If
@@ -480,7 +488,7 @@ Public Class Haupt
         file.Close()
 
         'prüfen ob man am ende angekommen ist
-        If zaehler = 134 Then
+        If zaehler = ZahlenCheck Then
             ProgressBar1.Value = 0
             Dim zaehler = 0
             Dim jaCounter1 = 0
@@ -531,7 +539,7 @@ Public Class Haupt
 
         If System.IO.File.Exists(path1) And Durchgang1.Checked = True Then
             count1 = System.IO.File.ReadLines(path1).Count()
-            If count1 > 134 Then
+            If count1 > ZahlenCheck Then
 
                 'Sagen das der durchgang fertig ist und den nächsten einschalten
                 MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
@@ -541,7 +549,7 @@ Public Class Haupt
 
                 If System.IO.File.Exists(path2) Then
                     count2 = System.IO.File.ReadLines(path2).Count()
-                    If count2 > 134 Then
+                    If count2 > ZahlenCheck Then
                         Auswerten.Show()
                     End If
                 End If
@@ -549,7 +557,7 @@ Public Class Haupt
             End If
         ElseIf System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
             count2 = System.IO.File.ReadLines(path2).Count()
-            If count2 > 134 Then
+            If count2 > ZahlenCheck Then
 
                 'Sagen das der durchgang fertig ist und den nächsten einschalten
                 MsgBox("Durchgang beendet, bitte die nächste Person...", vbOKOnly, "Erfolg")
@@ -559,7 +567,7 @@ Public Class Haupt
 
                 If System.IO.File.Exists(path1) Then
                     count1 = System.IO.File.ReadLines(path1).Count()
-                    If count1 > 134 Then
+                    If count1 > ZahlenCheck Then
                         Auswerten.Show()
                     End If
                 End If
@@ -586,7 +594,7 @@ Public Class Haupt
         Dim count2 = System.IO.File.ReadLines(path2).Count()
 
         'ausgabe wenn nicht alles beantwortet wurde. löschen der fehlerhaften datei und progress rückstellen
-        If count1 <= 134 Then
+        If count1 <= ZahlenCheck Then
             MsgBox("Bitte erneut Vorlieben von Partner 1 eingeben.", vbOKOnly, "!FEHLER!")
             My.Computer.FileSystem.DeleteFile(path1)
             zurucksetzten = zurucksetzten + 1
@@ -600,7 +608,7 @@ Public Class Haupt
             End If
             i = 135
         End If
-        If count2 <= 134 Then
+        If count2 <= ZahlenCheck Then
             MsgBox("Bitte erneut Vorlieben von Partner 2 eingeben.", vbOKOnly, "!FEHLER!")
             My.Computer.FileSystem.DeleteFile(path2)
             zurucksetzten = zurucksetzten + 1
@@ -612,7 +620,7 @@ Public Class Haupt
             If System.IO.File.Exists(path3) Then
                 My.Computer.FileSystem.DeleteFile(path3)
             End If
-            i = 135
+            i = ZahlenCheck + 1
         End If
 
         'prüfen ob schon auswertungen da sind
@@ -634,7 +642,7 @@ Public Class Haupt
         End If
 
         'Hochzählen bis das Array durch ist
-        Do While i <= 134
+        Do While i <= ZahlenCheck
 
             'Abfrage ob in der DB1 ein OK ist
             If vorliebend1(i) Like "OK " + vorlieben(i) Then
@@ -757,11 +765,11 @@ Public Class Haupt
             MsgBox("Warnung, hier wurde von Nummer 2 JA/Vielleicht gespamt!", vbOKOnly, "Spam Detector")
         End If
 
-        If neinCounter1 > 134 Then
+        If neinCounter1 > ZahlenCheck Then
             MsgBox("Warnung, hier wurde von Nummer 1 alles mit Nein beantwortet.", vbOKOnly, "Spam Detector")
         End If
 
-        If neinCounter2 > 134 Then
+        If neinCounter2 > ZahlenCheck Then
             MsgBox("Warnung, hier wurde von Nummer 2 alles mit Nein beantwortet.", vbOKOnly, "Spam Detector")
         End If
 
