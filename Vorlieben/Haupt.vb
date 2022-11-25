@@ -840,15 +840,16 @@ Public Class Haupt
             Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
             TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
             Process.Start(TskKill_Edge)
+
             'das system einen moment warten lasen
-            System.Threading.Thread.Sleep(500)
+            System.Threading.Thread.Sleep(200)
             'prüfen ob es eine history gibt und wenn ja löschen
             If System.IO.File.Exists("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History") Then
                 System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
             End If
 
             'nochmals kurz warten und dann weiter
-            System.Threading.Thread.Sleep(500)
+            System.Threading.Thread.Sleep(200)
 
             'System.Diagnostics.Process.Start("explorer.exe", ("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History"))
             'Process.Start("explorer.exe", String.Format("/n, /e, {0}", "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default"))
