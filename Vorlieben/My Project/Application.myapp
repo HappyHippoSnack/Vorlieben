@@ -4,7 +4,7 @@
   <MainForm>Haupt</MainForm>
   <SingleInstance>true</SingleInstance>
   <ShutdownMode>1</ShutdownMode>
-  <EnableVisualStyles>false</EnableVisualStyles>
+  <EnableVisualStyles>true</EnableVisualStyles>
   <AuthenticationMode>0</AuthenticationMode>
   <SaveMySettingsOnExit>false</SaveMySettingsOnExit>
 </MyApplicationData>

@@ -5,9 +5,10 @@ Public Class Haupt
 
     'den pfad der zu speichernden datei angeben
     Dim path As String
-    Dim path1 As String = "C:\Users\" & Environ("Username") & "\Desktop\VorliebenDB1.txt"
-    Dim path2 As String = "C:\Users\" & Environ("Username") & "\Desktop\VorliebenDB2.txt"
+    Dim path1 As String = "C:\Users\" & Environ("Username") & "\Desktop\VorliebenDB1"
+    Dim path2 As String = "C:\Users\" & Environ("Username") & "\Desktop\VorliebenDB2"
     Dim path3 As String = "C:\Users\" & Environ("Username") & "\Desktop\Auswertung.txt"
+    Dim historyEdge As String = "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History"
     Dim link As String
 
     'pfad der auswertung anpassen, so dass die dateien immer neben dem projekt liegen
@@ -15,14 +16,14 @@ Public Class Haupt
     'Dim path2 As String = Application.StartupPath + "VorliebenDB2.txt"
     'Dim path3 As String = Application.StartupPath + "Auswertung.txt"
 
-    'array erzeugen welches 135 stellen hat, gefüll tmit allen kinks
+    'array erzeugen welches 1116 stellen hat, gefüll tmit allen kinks
     Dim vorlieben(116) As String
 
 
-    'array erzeugen welches 135 stellen hat für person 1 und den durchgang
+    'array erzeugen welches 1116 stellen hat für person 1 und den durchgang
     Dim vorliebend1(116) As String
 
-    'array erzeugen welches 135 stellen hat für person 2 und den durchgang
+    'array erzeugen welches 1116 stellen hat für person 2 und den durchgang
     Dim vorliebend2(116) As String
 
     'einen zähler erzeugen der die kinks durchzählt und anhand der nummer weiß was gerade abgefragt wird
@@ -38,7 +39,7 @@ Public Class Haupt
     'Zurücksetzten löst aus, dass wenn eine 1 gesetzt ist, der vorgang gelöscht wird und man bei 0 anfangen muss (fehler sicherheit)
     Dim zurucksetzten As Int32
 
-    'Anzahl an Abfragen/Kinks, hier anpassen wenn verändert.
+    'Anzahl an Abfragen/Kinks, hier anpassen wenn verändert. IMMER EINS TIEFER ALS ARRAY GROESSE!
     Dim ZahlenCheck = 115
 
 
@@ -835,14 +836,22 @@ Public Class Haupt
             Global.Vorlieben.Starter.Close()
 
             'verlauf history löschen
-
+            'den edge task beenden der vllt gestartet wurde
             Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
             TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
             Process.Start(TskKill_Edge)
+            'das system einen moment warten lasen
+            System.Threading.Thread.Sleep(500)
+            'prüfen ob es eine history gibt und wenn ja löschen
+            If System.IO.File.Exists("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History") Then
+                System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+            End If
 
-            System.Threading.Thread.Sleep(600)
+            'nochmals kurz warten und dann weiter
+            System.Threading.Thread.Sleep(500)
 
-            System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+            'System.Diagnostics.Process.Start("explorer.exe", ("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History"))
+            'Process.Start("explorer.exe", String.Format("/n, /e, {0}", "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default"))
 
         ElseIf dr = DialogResult.Cancel Then
 
