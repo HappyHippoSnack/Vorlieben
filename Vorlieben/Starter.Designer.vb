@@ -28,14 +28,9 @@ Partial Class Starter
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Verstanden = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Extremist = New System.Windows.Forms.RadioButton()
-        Me.Normal = New System.Windows.Forms.RadioButton()
-        Me.Einsteiger = New System.Windows.Forms.RadioButton()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Version = New System.Windows.Forms.TextBox()
         Me.Anleitung = New System.Windows.Forms.Button()
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -80,60 +75,12 @@ Partial Class Starter
         'Verstanden
         '
         Me.Verstanden.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Verstanden.Location = New System.Drawing.Point(349, 407)
+        Me.Verstanden.Location = New System.Drawing.Point(349, 391)
         Me.Verstanden.Name = "Verstanden"
         Me.Verstanden.Size = New System.Drawing.Size(104, 32)
         Me.Verstanden.TabIndex = 3
         Me.Verstanden.Text = "Verstanden"
         Me.Verstanden.UseVisualStyleBackColor = True
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Extremist)
-        Me.GroupBox1.Controls.Add(Me.Normal)
-        Me.GroupBox1.Controls.Add(Me.Einsteiger)
-        Me.GroupBox1.Location = New System.Drawing.Point(304, 263)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Fetischdatenbanken"
-        '
-        'Extremist
-        '
-        Me.Extremist.AutoSize = True
-        Me.Extremist.Enabled = False
-        Me.Extremist.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Extremist.Location = New System.Drawing.Point(18, 74)
-        Me.Extremist.Name = "Extremist"
-        Me.Extremist.Size = New System.Drawing.Size(109, 19)
-        Me.Extremist.TabIndex = 2
-        Me.Extremist.Text = "Extremist (1730)"
-        Me.Extremist.UseVisualStyleBackColor = True
-        '
-        'Normal
-        '
-        Me.Normal.AutoSize = True
-        Me.Normal.Checked = True
-        Me.Normal.Location = New System.Drawing.Point(18, 49)
-        Me.Normal.Name = "Normal"
-        Me.Normal.Size = New System.Drawing.Size(94, 19)
-        Me.Normal.TabIndex = 1
-        Me.Normal.TabStop = True
-        Me.Normal.Text = "Normal (130)"
-        Me.Normal.UseVisualStyleBackColor = True
-        '
-        'Einsteiger
-        '
-        Me.Einsteiger.AutoSize = True
-        Me.Einsteiger.Enabled = False
-        Me.Einsteiger.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Einsteiger.Location = New System.Drawing.Point(18, 24)
-        Me.Einsteiger.Name = "Einsteiger"
-        Me.Einsteiger.Size = New System.Drawing.Size(99, 19)
-        Me.Einsteiger.TabIndex = 0
-        Me.Einsteiger.Text = "Einsteiger (50)"
-        Me.Einsteiger.UseVisualStyleBackColor = True
         '
         'Version
         '
@@ -149,7 +96,7 @@ Partial Class Starter
         'Anleitung
         '
         Me.Anleitung.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Anleitung.Location = New System.Drawing.Point(304, 369)
+        Me.Anleitung.Location = New System.Drawing.Point(302, 303)
         Me.Anleitung.Name = "Anleitung"
         Me.Anleitung.Size = New System.Drawing.Size(200, 32)
         Me.Anleitung.TabIndex = 6
@@ -163,7 +110,6 @@ Partial Class Starter
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Anleitung)
         Me.Controls.Add(Me.Version)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Verstanden)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
@@ -175,8 +121,6 @@ Partial Class Starter
         Me.Name = "Starter"
         Me.Text = "Starter"
         Me.TopMost = True
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -186,10 +130,6 @@ Partial Class Starter
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Verstanden As Button
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Extremist As RadioButton
-    Friend WithEvents Normal As RadioButton
-    Friend WithEvents Einsteiger As RadioButton
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Version As TextBox
     Friend WithEvents Anleitung As Button

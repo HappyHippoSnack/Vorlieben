@@ -32,10 +32,6 @@ Partial Class Optionen
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Person2loeschen = New System.Windows.Forms.Button()
         Me.Back = New System.Windows.Forms.Button()
-        Me.Sparsam = New System.Windows.Forms.RadioButton()
-        Me.Normal = New System.Windows.Forms.RadioButton()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Gedultsprobe = New System.Windows.Forms.RadioButton()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Auswertung = New System.Windows.Forms.Label()
@@ -43,7 +39,6 @@ Partial Class Optionen
         Me.Auswertungloeschen = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -136,52 +131,6 @@ Partial Class Optionen
         Me.Back.Text = "Zurück"
         Me.Back.UseVisualStyleBackColor = True
         '
-        'Sparsam
-        '
-        Me.Sparsam.AutoSize = True
-        Me.Sparsam.Enabled = False
-        Me.Sparsam.Location = New System.Drawing.Point(6, 22)
-        Me.Sparsam.Name = "Sparsam"
-        Me.Sparsam.Size = New System.Drawing.Size(99, 19)
-        Me.Sparsam.TabIndex = 9
-        Me.Sparsam.Text = "Einsteiger (50)"
-        Me.Sparsam.UseVisualStyleBackColor = True
-        '
-        'Normal
-        '
-        Me.Normal.AutoSize = True
-        Me.Normal.Enabled = False
-        Me.Normal.Location = New System.Drawing.Point(6, 47)
-        Me.Normal.Name = "Normal"
-        Me.Normal.Size = New System.Drawing.Size(94, 19)
-        Me.Normal.TabIndex = 10
-        Me.Normal.Text = "Normal (130)"
-        Me.Normal.UseVisualStyleBackColor = True
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox3.Controls.Add(Me.Gedultsprobe)
-        Me.GroupBox3.Controls.Add(Me.Sparsam)
-        Me.GroupBox3.Controls.Add(Me.Normal)
-        Me.GroupBox3.Location = New System.Drawing.Point(18, 201)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
-        Me.GroupBox3.TabIndex = 11
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Benutzte Datenbank"
-        '
-        'Gedultsprobe
-        '
-        Me.Gedultsprobe.AutoSize = True
-        Me.Gedultsprobe.Enabled = False
-        Me.Gedultsprobe.Location = New System.Drawing.Point(6, 72)
-        Me.Gedultsprobe.Name = "Gedultsprobe"
-        Me.Gedultsprobe.Size = New System.Drawing.Size(109, 19)
-        Me.Gedultsprobe.TabIndex = 11
-        Me.Gedultsprobe.Text = "Extremist (1703)"
-        Me.Gedultsprobe.UseVisualStyleBackColor = True
-        '
         'TextBox2
         '
         Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
@@ -244,7 +193,6 @@ Partial Class Optionen
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -256,8 +204,6 @@ Partial Class Optionen
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
@@ -273,10 +219,6 @@ Partial Class Optionen
     Friend WithEvents Label6 As Label
     Friend WithEvents Person2loeschen As Button
     Friend WithEvents Back As Button
-    Friend WithEvents Sparsam As RadioButton
-    Friend WithEvents Normal As RadioButton
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Gedultsprobe As RadioButton
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents Auswertung As Label

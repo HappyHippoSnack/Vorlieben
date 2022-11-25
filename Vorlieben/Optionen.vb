@@ -30,8 +30,6 @@
         End If
 
 
-        'Checkbox setzten
-        Normal.Checked = True
 
     End Sub
 
