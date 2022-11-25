@@ -39,7 +39,7 @@ Public Class Haupt
     'Zurücksetzten löst aus, dass wenn eine 1 gesetzt ist, der vorgang gelöscht wird und man bei 0 anfangen muss (fehler sicherheit)
     Dim zurucksetzten As Int32
 
-    'Anzahl an Abfragen/Kinks, hier anpassen wenn verändert. IMMER EINS TIEFER ALS ARRAY GROESSE!
+    'Anzahl an Abfragen/Kinks mit JA /VLLT Wertung schlimm, hier anpassen wenn verändert. IMMER EINS TIEFER ALS ARRAY GROESSE!
     Dim ZahlenCheck = 115
 
 
@@ -740,11 +740,11 @@ Public Class Haupt
 
 
         'array auslesen und auf spam prüfen
-        If jaCounter1 > 120 Then
+        If jaCounter1 > ZahlenCheck Then
             MsgBox("Warnung, hier wurde von Nummer 1 JA/Vielleicht gespamt!", vbOKOnly, "Spam Detector")
         End If
 
-        If jaCounter2 > 120 Then
+        If jaCounter2 > ZahlenCheck Then
             MsgBox("Warnung, hier wurde von Nummer 2 JA/Vielleicht gespamt!", vbOKOnly, "Spam Detector")
         End If
 
@@ -766,6 +766,7 @@ Public Class Haupt
             'Auswertung direkt öffnen und dem nutzer anzeigen
 
             Process.Start(("notepad.exe"), path3)
+
         Else
 
         End If
@@ -780,7 +781,7 @@ Public Class Haupt
 
         'abfrage ob man den titel oder das fertig zur pornoseite schicken will
         If value Like "Vorlieben. Die App" Or VorliebeText.Text Like "!FERTIG!" Then
-            MsgBox("Hier kannst du den Fetisch suchen.", vbOKOnly, "Fehler")
+            MsgBox("Hier kannst du den Fetisch auf einer Pornoseite suchen.", vbOKOnly, "Fehler")
 
         Else
             'Text anpassen das ein browser ihn öffnen kann durch löschen von leerzeichen und ersetzten durch unterstrich
