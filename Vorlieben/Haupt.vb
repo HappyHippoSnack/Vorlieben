@@ -3,15 +3,24 @@ Imports System.Text
 
 Public Class Haupt
 
-    'den pfad der zu speichernden datei angeben
+    'den pfad der geändert wird, je nach nutzer der an der reihe ist
     Dim path As String
+
+    'Pfad für die datenbank von user1
     Dim path1 As String = "C:\Users\" & Environ("Username") & "\Desktop\VorliebenDB1"
+
+    'pfad für die datenbank von user2
     Dim path2 As String = "C:\Users\" & Environ("Username") & "\Desktop\VorliebenDB2"
+
+    'pfad auf dem die auswertungen gespeichert werden soll
     Dim path3 As String = "C:\Users\" & Environ("Username") & "\Desktop\Auswertung.txt"
-    Dim historyEdge As String = "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History"
-    Dim link As String
+
+    'offensichtlich unbenutze sachen die weg können
+    'Dim historyEdge As String = "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History"
+
     'BrowserAbfrage welcher Browser genutzt werden soll
     Dim Browser As String = "Unbekannt"
+
     'Abfrage der WindowsForms beim schließen
     Dim dr As Windows.Forms.DialogResult
 
@@ -77,7 +86,16 @@ Public Class Haupt
         End Try
 
         'für den fall, dass weder edge noch firefox da ist hat man pech und muss eben firefox installieren
-        If Browser = "Unbekannt" Then
+        If Browser = "Unbekannt" And System.IO.File.Exists("C:\Program Files (x86)\Google\Chrome\Application\Chrome") Then
+
+            'Begründung warum das programm nicht klappen kann
+            MsgBox("Bitte FireFox oder Edge installieren! Mit Chrome, geht es leider nicht!")
+
+            'Das programm wird beendet, egal was man auswählt, weil kein passender browser da ist
+            Me.Close()
+            dr = DialogResult.OK
+
+        ElseIf Browser = "Unbekannt" Then
 
             'Begründung warum das programm nicht klappen kann
             MsgBox("Bitte FireFox oder Edge installieren! Ohne einen der beiden, geht es nicht!")
@@ -87,6 +105,7 @@ Public Class Haupt
             dr = DialogResult.OK
 
         Else
+
             'nichts machen weil alles passt und es losgehen kann!
         End If
 
@@ -905,19 +924,15 @@ Public Class Haupt
 
                         System.Diagnostics.Process.Start("explorer.exe", "/select," & "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
 
+                        'nochmals kurz warten und dann programm beenden
+                        System.Threading.Thread.Sleep(100)
+
                     End Try
                 End If
 
             Else
                 'nichts machen, weil es eh firefox im privaten ist
             End If
-
-
-
-
-            'nochmals kurz warten und dann weiter
-            'System.Threading.Thread.Sleep(200)
-
 
             'wenn man bei der sicherheitsfrage nein sagt, startet das programm den notfallplan
         ElseIf dr = DialogResult.Cancel Then
