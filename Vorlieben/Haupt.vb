@@ -833,10 +833,10 @@ Public Class Haupt
             If System.IO.File.Exists(path2) Then
                 My.Computer.FileSystem.DeleteFile(path2)
             End If
-            Global.Vorlieben.Optionen.Close()
-            Global.Vorlieben.Starter.Close()
 
-            'verlauf history löschen
+
+            '#########################################################verlauf history löschen#################################################################################
+
             'den edge task beenden der vllt gestartet wurde
             Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
             TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
@@ -844,23 +844,38 @@ Public Class Haupt
 
             'das system einen moment warten lasen
             System.Threading.Thread.Sleep(200)
+
             'prüfen ob es eine history gibt und wenn ja löschen
             If System.IO.File.Exists("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History") Then
-                System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+
+                Try
+                    System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+                Catch
+
+                    MsgBox("Es konnte der Browserverlauf nicht gelöscht werden. Bitte die Datei History selbst löschen!", vbOKOnly, "Vorsicht! Browserverlauf!")
+
+                    'Process.Start("explorer.exe", String.Format("/n, /e, {0}", "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default"))
+
+                    System.Diagnostics.Process.Start("explorer.exe", "/select," & "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+
+                End Try
             End If
 
+
             'nochmals kurz warten und dann weiter
-            System.Threading.Thread.Sleep(200)
+            'System.Threading.Thread.Sleep(200)
 
-            'System.Diagnostics.Process.Start("explorer.exe", ("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History"))
-            'Process.Start("explorer.exe", String.Format("/n, /e, {0}", "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default"))
 
+            'wenn man bei der sicherheitsfrage nein sagt, startet das programm den notfallplan
         ElseIf dr = DialogResult.Cancel Then
 
             Global.Vorlieben.Starter.Show()
             '  er ist unsicher -- wir gehen auf start zurück
         End If
 
+        'alles schließen was noch da ist oder vllt im hintergrund offen
+        Global.Vorlieben.Optionen.Close()
+        Global.Vorlieben.Starter.Close()
 
 
     End Sub
