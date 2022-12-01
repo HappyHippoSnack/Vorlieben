@@ -14,6 +14,10 @@
 
     Private Sub Optionen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
+        'version korrekt anzeigen
+        Version.Text = String.Format("Version: {0}", My.Application.Info.Version.ToString)
+
         'Zeilen der Textdateien werden gezählt 
         If System.IO.File.Exists(path1) Then
             count1 = System.IO.File.ReadLines(path1).Count()
@@ -33,7 +37,7 @@
             Antworten2.Text = count2
         End If
 
-        'prüfen ob eine auswertung vorhanden ist und die anzhal stimmt
+        'prüfen ob eine auswertung vorhanden ist und die anzahl stimmt
         If System.IO.File.Exists(path3) Then
             If count3 >= 116 Then
                 Auswertung.Text = "Auswertung vorhanden"
@@ -44,8 +48,8 @@
 
             End If
         Else
-                'setzten der richtigen farbe wenn die auswertung weg ist, dazu anpassen des textes
-                Auswertung.Text = "Fehlt"
+            'setzten der richtigen farbe wenn die auswertung weg ist, dazu anpassen des textes
+            Auswertung.Text = "Fehlt"
             Me.Auswertung.ForeColor = Color.Red
         End If
 
@@ -142,4 +146,6 @@
 
 
     End Sub
+
+
 End Class

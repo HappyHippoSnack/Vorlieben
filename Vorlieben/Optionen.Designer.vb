@@ -32,7 +32,7 @@ Partial Class Optionen
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Person2loeschen = New System.Windows.Forms.Button()
         Me.Back = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Version = New System.Windows.Forms.TextBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Auswertung = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -131,17 +131,17 @@ Partial Class Optionen
         Me.Back.Text = "Zurück"
         Me.Back.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'Version
         '
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(688, 422)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(100, 16)
-        Me.TextBox2.TabIndex = 12
-        Me.TextBox2.Text = "© 0.1.7      S. Jäckel"
+        Me.Version.BackColor = System.Drawing.SystemColors.Control
+        Me.Version.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Version.Enabled = False
+        Me.Version.Location = New System.Drawing.Point(688, 422)
+        Me.Version.Name = "Version"
+        Me.Version.ReadOnly = True
+        Me.Version.Size = New System.Drawing.Size(100, 16)
+        Me.Version.TabIndex = 12
+        Me.Version.Text = "Version"
         '
         'GroupBox4
         '
@@ -192,7 +192,7 @@ Partial Class Optionen
         Me.CancelButton = Me.Back
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Version)
         Me.Controls.Add(Me.Back)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -219,7 +219,7 @@ Partial Class Optionen
     Friend WithEvents Label6 As Label
     Friend WithEvents Person2loeschen As Button
     Friend WithEvents Back As Button
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Version As TextBox
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents Auswertung As Label
     Friend WithEvents Label2 As Label

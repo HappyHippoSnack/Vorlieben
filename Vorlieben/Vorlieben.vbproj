@@ -8,11 +8,16 @@
     <MyType>WindowsForms</MyType>
     <ApplicationIcon>Herz- 1.ico</ApplicationIcon>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
-    <Version>5.6.1</Version>
+    <Version>5</Version>
     <Copyright>Sören Jäckel</Copyright>
-    <AssemblyVersion>5.9.1.0</AssemblyVersion>
+    <AssemblyVersion>5</AssemblyVersion>
     <RepositoryUrl>https://github.com/HappyHippoSnack/Vorlieben</RepositoryUrl>
-    <FileVersion>5.9.1.0</FileVersion>
+    <FileVersion>5</FileVersion>
+    <PackageProjectUrl>https://github.com/HappyHippoSnack/Vorlieben</PackageProjectUrl>
+    <Company>S.J.</Company>
+    <Product>Vorlieben_Die_App</Product>
+    <Authors>S.J.</Authors>
+    <PackageId />
   </PropertyGroup>
 
   <ItemGroup>

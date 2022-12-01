@@ -6,11 +6,8 @@
 
     Public Sub Starter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
-
-
         'version korrekt anzeigen
-        Version.Text = String.Format("Version: {0}", My.Application.Info.Version.ToString)
+        Version.Text = String.Format("V. {0}", My.Application.Info.Version.ToString)
 
     End Sub
 
@@ -36,5 +33,6 @@
         Me.Hide()
 
     End Sub
+
 
 End Class
