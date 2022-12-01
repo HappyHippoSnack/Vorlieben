@@ -31,6 +31,7 @@ Partial Class Starter
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Version = New System.Windows.Forms.TextBox()
         Me.Anleitung = New System.Windows.Forms.Button()
+        Me.BrowserCheck = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -103,11 +104,21 @@ Partial Class Starter
         Me.Anleitung.Text = "Anleitung / Help Me"
         Me.Anleitung.UseVisualStyleBackColor = True
         '
+        'BrowserCheck
+        '
+        Me.BrowserCheck.Location = New System.Drawing.Point(68, 332)
+        Me.BrowserCheck.Name = "BrowserCheck"
+        Me.BrowserCheck.Size = New System.Drawing.Size(142, 48)
+        Me.BrowserCheck.TabIndex = 7
+        Me.BrowserCheck.Text = "BrowserCheck"
+        Me.BrowserCheck.UseVisualStyleBackColor = True
+        '
         'Starter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BrowserCheck)
         Me.Controls.Add(Me.Anleitung)
         Me.Controls.Add(Me.Version)
         Me.Controls.Add(Me.Verstanden)
@@ -133,4 +144,5 @@ Partial Class Starter
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Version As TextBox
     Friend WithEvents Anleitung As Button
+    Friend WithEvents BrowserCheck As Button
 End Class

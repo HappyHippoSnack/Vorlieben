@@ -10,6 +10,11 @@ Public Class Haupt
     Dim path3 As String = "C:\Users\" & Environ("Username") & "\Desktop\Auswertung.txt"
     Dim historyEdge As String = "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History"
     Dim link As String
+    'BrowserAbfrage welcher Browser genutzt werden soll
+    Dim Browser As String = "Unbekannt"
+    'Abfrage der WindowsForms beim schließen
+    Dim dr As Windows.Forms.DialogResult
+
 
     'pfad der auswertung anpassen, so dass die dateien immer neben dem projekt liegen
     'Dim path1 As String = Application.StartupPath + "VorliebenDB1.txt"
@@ -53,6 +58,39 @@ Public Class Haupt
         Dim jaCounter1 = 0
         Dim jaCounter2 = 0
 
+
+        'Browser installation prüfen und korrekten Browser einstellen
+        Try
+            'Prüfen ob es den Firefox mit privatem Browser gibt...
+            If System.IO.File.Exists("C:\Program Files\Mozilla Firefox\private_browsing.exe") Then
+                MsgBox("Hat FireFox geklappt!")
+                Browser = "Unbekannt"
+            End If
+
+        Catch ex As Exception
+
+            'prüfen ob Edge isntalliert ist und nutzen
+            If System.IO.File.Exists("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe") Then
+                MsgBox("Hat Edge geklappt!")
+                Browser = "Edge"
+            End If
+
+
+        End Try
+
+        'für den fall, dass weder edge noch firefox da ist hat man pech und muss eben firefox installieren
+        If Browser = "Unbekannt" Then
+
+            'Begründung warum das programm nicht klappen kann
+            MsgBox("Hat nicht geklappt! Installier FireFox und es geht!")
+
+            'Das programm wird beendet, egal was man auswählt, weil kein passender browser da ist
+            Me.Close()
+            dr = DialogResult.OK
+
+        Else
+            'nichts machen weil alles passt und es losgehen kann!
+        End If
 
 
         'checkbox von durchgang 1 haken setzten
@@ -789,7 +827,7 @@ Public Class Haupt
 
             'öffnen des browsers
 
-            Process.Start(("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"), "https://www.xnxx.com/search/" + aString)
+            Process.Start(("C:\Program Files\Mozilla Firefox\private_browsing.exe"), "https://www.xnxx.com/search/" + aString)
 
         End If
 
@@ -821,7 +859,7 @@ Public Class Haupt
 
     Private Sub Haupt_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
 
-        Dim dr As Windows.Forms.DialogResult
+
 
         dr = MessageBox.Show("Wollen sie wirklich beenden?", "Sind sie sicher?", MessageBoxButtons.OKCancel)
         If dr = DialogResult.OK Then
@@ -837,7 +875,7 @@ Public Class Haupt
 
             '#########################################################verlauf history löschen#################################################################################
 
-            'den edge task beenden der vllt gestartet wurde
+            'den edgebrowser task beenden der vllt gestartet wurde
             Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
             TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
             Process.Start(TskKill_Edge)
