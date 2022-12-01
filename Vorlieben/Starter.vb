@@ -37,15 +37,4 @@
 
     End Sub
 
-    Private Sub BrowserCheck_Click(sender As Object, e As EventArgs) Handles BrowserCheck.Click
-
-        Dim value As String
-        value = "Ich bin ein Test"
-        Dim aString As String = Replace(value, " ", "_")
-
-        'Process.Start(("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"), "https://www.test.de/"+ aString)
-        Process.Start(("C:\Program Files\Mozilla Firefox\private_browsing.exe"), "https://www.test.de/" + aString)
-
-
-    End Sub
 End Class

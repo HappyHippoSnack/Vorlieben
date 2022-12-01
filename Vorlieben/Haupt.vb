@@ -63,15 +63,13 @@ Public Class Haupt
         Try
             'Prüfen ob es den Firefox mit privatem Browser gibt...
             If System.IO.File.Exists("C:\Program Files\Mozilla Firefox\private_browsing.exe") Then
-                MsgBox("Hat FireFox geklappt!")
-                Browser = "Unbekannt"
+                Browser = "FireFox"
             End If
 
         Catch ex As Exception
 
             'prüfen ob Edge isntalliert ist und nutzen
             If System.IO.File.Exists("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe") Then
-                MsgBox("Hat Edge geklappt!")
                 Browser = "Edge"
             End If
 
@@ -82,7 +80,7 @@ Public Class Haupt
         If Browser = "Unbekannt" Then
 
             'Begründung warum das programm nicht klappen kann
-            MsgBox("Hat nicht geklappt! Installier FireFox und es geht!")
+            MsgBox("Bitte FireFox oder Edge installieren! Ohne einen der beiden, geht es nicht!")
 
             'Das programm wird beendet, egal was man auswählt, weil kein passender browser da ist
             Me.Close()
@@ -826,8 +824,16 @@ Public Class Haupt
             Dim aString As String = Replace(value, " ", "_")
 
             'öffnen des browsers
+            If Browser = "FireFox" Then
+                Process.Start(("C:\Program Files\Mozilla Firefox\private_browsing.exe"), "https://www.xnxx.com/search/" + aString)
+            ElseIf Browser = "Edge" Then
+                Process.Start(("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"), "https://www.xnxx.com/search/" + aString)
+            ElseIf Browser = "Unbekannt" Then
 
-            Process.Start(("C:\Program Files\Mozilla Firefox\private_browsing.exe"), "https://www.xnxx.com/search/" + aString)
+                Me.Close()
+                dr = DialogResult.OK
+            End If
+
 
         End If
 
@@ -875,29 +881,38 @@ Public Class Haupt
 
             '#########################################################verlauf history löschen#################################################################################
 
-            'den edgebrowser task beenden der vllt gestartet wurde
-            Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
-            TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
-            Process.Start(TskKill_Edge)
+            'Abfrage welcher browser läuft und löschen der History
+            If Browser = "Edge" Then
 
-            'das system einen moment warten lasen
-            System.Threading.Thread.Sleep(200)
+                'den edgebrowser task beenden der vllt gestartet wurde
+                Dim TskKill_Edge As New ProcessStartInfo("Taskkill.exe")
+                TskKill_Edge.Arguments = "/F /IM MSEdge.exe /T"
+                Process.Start(TskKill_Edge)
 
-            'prüfen ob es eine history gibt und wenn ja löschen
-            If System.IO.File.Exists("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History") Then
+                'das system einen moment warten lasen
+                System.Threading.Thread.Sleep(200)
 
-                Try
-                    System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
-                Catch
+                'prüfen ob es eine history gibt und wenn ja löschen
+                If System.IO.File.Exists("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History") Then
 
-                    MsgBox("Es konnte der Browserverlauf nicht gelöscht werden. Bitte die Datei History selbst löschen!", vbOKOnly, "Vorsicht! Browserverlauf!")
+                    Try
+                        System.IO.File.Delete("C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+                    Catch
 
-                    'Process.Start("explorer.exe", String.Format("/n, /e, {0}", "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default"))
+                        MsgBox("Es konnte der Browserverlauf nicht gelöscht werden. Bitte die Datei History selbst löschen!", vbOKOnly, "Vorsicht! Browserverlauf!")
 
-                    System.Diagnostics.Process.Start("explorer.exe", "/select," & "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+                        'Process.Start("explorer.exe", String.Format("/n, /e, {0}", "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default"))
 
-                End Try
+                        System.Diagnostics.Process.Start("explorer.exe", "/select," & "C:\Users\" & Environ("Username") & "\AppData\Local\Microsoft\Edge\User Data\Default\History")
+
+                    End Try
+                End If
+
+            Else
+                'nichts machen, weil es eh firefox im privaten ist
             End If
+
+
 
 
             'nochmals kurz warten und dann weiter
