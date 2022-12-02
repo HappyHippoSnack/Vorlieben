@@ -30,7 +30,7 @@ Public Class Haupt
     'Dim path2 As String = Application.StartupPath + "VorliebenDB2.txt"
     'Dim path3 As String = Application.StartupPath + "Auswertung.txt"
 
-    'array erzeugen welches 1116 stellen hat, gefüll tmit allen kinks
+    'array erzeugen welches 116 stellen hat, gefüll tmit allen kinks
     Dim vorlieben(116) As String
 
 
@@ -56,7 +56,9 @@ Public Class Haupt
     'Anzahl an Abfragen/Kinks mit JA /VLLT Wertung schlimm, hier anpassen wenn verändert. IMMER EINS TIEFER ALS ARRAY GROESSE!
     Dim ZahlenCheck = 115
 
-
+    'zaehler erzeugen die zählen ob man alle fragen beantwortet hat für user 1+2
+    Dim count1 As Integer
+    Dim count2 As Integer
 
 
 
@@ -67,46 +69,17 @@ Public Class Haupt
         Dim jaCounter1 = 0
         Dim jaCounter2 = 0
 
+        If System.IO.File.Exists("C:\Program Files\Mozilla Firefox\private_browsing.exe") Then
+            Browser = "FireFox"
 
-        'Browser installation prüfen und korrekten Browser einstellen
-        Try
-            'Prüfen ob es den Firefox mit privatem Browser gibt...
-            If System.IO.File.Exists("C:\Program Files\Mozilla Firefox\private_browsing.exe") Then
-                Browser = "FireFox"
-            End If
+        ElseIf System.IO.File.Exists("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe") Then
+            Browser = "Edge"
 
-        Catch ex As Exception
-
-            'prüfen ob Edge isntalliert ist und nutzen
-            If System.IO.File.Exists("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe") Then
-                Browser = "Edge"
-            End If
-
-
-        End Try
-
-        'für den fall, dass weder edge noch firefox da ist hat man pech und muss eben firefox installieren
-        If Browser = "Unbekannt" And System.IO.File.Exists("C:\Program Files (x86)\Google\Chrome\Application\Chrome") Then
-
-            'Begründung warum das programm nicht klappen kann
+        ElseIf System.IO.File.Exists("C:\Program Files (x86)\Google\Chrome\Application\Chrome") Then
+            Browser = "Unbekannt"
             MsgBox("Bitte FireFox oder Edge installieren! Mit Chrome, geht es leider nicht!")
-
-            'Das programm wird beendet, egal was man auswählt, weil kein passender browser da ist
             Me.Close()
             dr = DialogResult.OK
-
-        ElseIf Browser = "Unbekannt" Then
-
-            'Begründung warum das programm nicht klappen kann
-            MsgBox("Bitte FireFox oder Edge installieren! Ohne einen der beiden, geht es nicht!")
-
-            'Das programm wird beendet, egal was man auswählt, weil kein passender browser da ist
-            Me.Close()
-            dr = DialogResult.OK
-
-        Else
-
-            'nichts machen weil alles passt und es losgehen kann!
         End If
 
 
@@ -173,7 +146,7 @@ Public Class Haupt
         vorlieben(20) = "Bukkake"
         vorlieben(21) = "Butt Plug"
         vorlieben(22) = "Cameltoe"
-        vorlieben(23) = "Hier könnte Ihre Werbung stehen"
+        vorlieben(23) = "!Ihre Werbung hier!"
         vorlieben(24) = "Tentacle"
         vorlieben(25) = "Cartoon"
         vorlieben(26) = "Chastity Belt"
@@ -295,7 +268,7 @@ Public Class Haupt
         file.WriteLine("OK " + VorliebeText.Text)
         file.Close()
 
-        'prüfen ob man am ende angekommen ist
+        'prüfen ob man am ende der abstimmung angekommen ist
         If zaehler = ZahlenCheck Then
             ProgressBar1.Value = 0
             Dim jaCounter1 = 0
@@ -313,7 +286,7 @@ Public Class Haupt
 
 
 
-        'prüfen ob schon auswertungen da sind
+        'prüfen ob schon auswertungen da sind für user 1
         If System.IO.File.Exists(path1) Then
             VorhandenPerson1.Text = "Daten Vorhanden"
             VorhandenPerson1.ForeColor = Color.Green
@@ -322,7 +295,7 @@ Public Class Haupt
             VorhandenPerson1.ForeColor = Color.Red
         End If
 
-
+        'prüfen ob schon auswertungen da sind für user 2
         If System.IO.File.Exists(path2) Then
             VorhandenPerson2.Text = "Daten Vorhanden"
             VorhandenPerson2.ForeColor = Color.Green
@@ -331,7 +304,7 @@ Public Class Haupt
             VorhandenPerson2.ForeColor = Color.Red
         End If
 
-
+        'prüfen ob schon auswertungen da sind allgemein
         If System.IO.File.Exists(path3) Then
             Auswertung.Text = "Daten Vorhanden"
             Auswertung.ForeColor = Color.Green
@@ -345,10 +318,8 @@ Public Class Haupt
         ProgressBar1.Maximum = vorlieben.Length
         ProgressBar1.Value = ProgressBar1.Value + 1
 
-        'auswerten anzeigen
-        Dim count1 As Integer
-        Dim count2 As Integer
 
+        'Abfrage wer dran ist und zählen ob die person schon fertig ist
         If System.IO.File.Exists(path1) And Durchgang1.Checked = True Then
             count1 = System.IO.File.ReadLines(path1).Count()
             If count1 > ZahlenCheck Then
@@ -367,6 +338,7 @@ Public Class Haupt
                 End If
 
             End If
+
         ElseIf System.IO.File.Exists(path2) And Durchgang2.Checked = True Then
             count2 = System.IO.File.ReadLines(path2).Count()
             If count2 > ZahlenCheck Then
@@ -426,7 +398,7 @@ Public Class Haupt
         End If
 
 
-        'prüfen ob schon auswertungen da sind
+        'prüfen ob schon auswertungen da sind für user 1
         If System.IO.File.Exists(path1) Then
             VorhandenPerson1.Text = "Daten Vorhanden"
             VorhandenPerson1.ForeColor = Color.Green
@@ -435,7 +407,7 @@ Public Class Haupt
             VorhandenPerson1.ForeColor = Color.Red
         End If
 
-
+        'prüfen ob schon auswertungen da sind für user 2
         If System.IO.File.Exists(path2) Then
             VorhandenPerson2.Text = "Daten Vorhanden"
             VorhandenPerson2.ForeColor = Color.Green
@@ -444,7 +416,7 @@ Public Class Haupt
             VorhandenPerson2.ForeColor = Color.Red
         End If
 
-
+        'prüfen ob schon auswertungen da sind
         If System.IO.File.Exists(path3) Then
             Auswertung.Text = "Daten Vorhanden"
             Auswertung.ForeColor = Color.Green
