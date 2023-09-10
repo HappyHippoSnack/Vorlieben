@@ -12,7 +12,7 @@
     End Sub
 
 
-    Private Sub Starter_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+    Private Sub Starter_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         Haupt.Show()
     End Sub
 
