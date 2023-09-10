@@ -30,8 +30,11 @@ Public Class Haupt
     'Dim path2 As String = Application.StartupPath + "VorliebenDB2.txt"
     'Dim path3 As String = Application.StartupPath + "Auswertung.txt"
 
-    'array erzeugen welches 116 stellen hat, gefüll tmit allen kinks
+    'array erzeugen welches 116 stellen hat, gefüllt mit allen kinks
     Dim vorlieben(116) As String
+
+    'array erzeugen, welches die erklärungen der Fetische in sich hat
+    Dim vorlieben_erklaerung(116) As String
 
 
     'array erzeugen welches 1116 stellen hat für person 1 und den durchgang
@@ -136,7 +139,7 @@ Public Class Haupt
         vorlieben(10) = "Ball Licking"
         vorlieben(11) = "Balloon"
         vorlieben(12) = "BDSM"
-        vorlieben(13) = "Begging"
+        vorlieben(13) = "Betteln"
         vorlieben(14) = "Bend Over"
         vorlieben(15) = "Blindfolded"
         vorlieben(16) = "Blowjob"
@@ -156,7 +159,7 @@ Public Class Haupt
         vorlieben(30) = "Creampie"
         vorlieben(31) = "Crotchless Panties"
         vorlieben(32) = "Cuckold Humiliation"
-        vorlieben(33) = "Cum On Face"
+        vorlieben(33) = "Cum On Boobs"
         vorlieben(34) = "Cum In Mouth"
         vorlieben(35) = "Cum In Pussy"
         vorlieben(36) = "Cum On Ass"
@@ -590,9 +593,145 @@ Public Class Haupt
 
 
     End Sub
+    Private Sub Translation_Click(sender As Object, e As EventArgs) Handles Translation.Click
+
+
+        If zaehler = "115" Then
+
+            MsgBox("Durchgang beendet...", vbOKOnly, "Ende")
+
+        ElseIf (zaehler = "0") Then
+
+        Else
+
+            MsgBox(vorlieben_erklaerung(zaehler), vbOKOnly, "Erklärung")
+
+        End If
+
+
+        vorlieben_erklaerung(0) = "Vorlieben. Die App - So heißt dei App bzw. das Programm was du gerade ausführst."
+        vorlieben_erklaerung(1) = "All Holes - Bedeutet interaktion, mit allen [Öffnungen] also zum Beispiel Mund, Vagina, Arsch."
+        vorlieben_erklaerung(2) = "Anal - Anal ist der Geschlechtsverkehr mit dem Arsch."
+        vorlieben_erklaerung(3) = "Anal Beads - Meistens Kugeln an einem Band, welche in den Po eingeführt werden."
+        vorlieben_erklaerung(4) = "Anal Creampie - Das abspritzen in den Po, mit gewolltem tropfen aus dem Po."
+        vorlieben_erklaerung(5) = "Anal Dildo - Die stimmulierung des po mit hilfe eines Dildos."
+        vorlieben_erklaerung(6) = "Anal Fisting - Das stimmulieren des Po mit der gesamten Hand."
+        vorlieben_erklaerung(7) = "Anal Gape - Durch dehnung und training des Po, dafür sorgen, dass der Po quasi offen bleibt für einen Moment."
+        vorlieben_erklaerung(8) = "Ass Eating - Das Orale stimmulieren des Po vom Partner."
+        vorlieben_erklaerung(9) = "Assfingering - Das stimmulieren des Po durch finger."
+        vorlieben_erklaerung(10) = "Ball Licking - Lecken der Hoden durch den Partner."
+        vorlieben_erklaerung(11) = "Balloon - Die integration von aufblasbaren Balloons in das Liebesleben"
+        vorlieben_erklaerung(12) = "BDSM - Bondage Sadomaso, also Fesseln und das Spiel mit schmerzen bzw. einschränkung des anderen."
+        vorlieben_erklaerung(13) = "Beggin - Den Partner um dinge betteln lassen, also die erlaubnis zu kommen oder andere Ziele welche gewünscht sind"
+        vorlieben_erklaerung(14) = "Bend Over - Den Partner über Gegenstände beugen und in dieser haltung Geschlechtsverkehr haben."
+        vorlieben_erklaerung(15) = "Blindfolded - Verbundene Augen, also dem Partner durch verbinden der Augen die Sicht nehmen."
+        vorlieben_erklaerung(16) = "Blowjob - Blasen, also klassischer Oral bei dem männlichen Partner. "
+        vorlieben_erklaerung(17) = "Erotic Kissing - Intesives Küssen, meist als Vorspiel und anregung des Partners."
+        vorlieben_erklaerung(18) = "Bondage - Fesseln, also alles was unter die Kategorie fesseln fällt."
+        vorlieben_erklaerung(19) = "Shaved - Rasiert, das Gegenstück zu [unshaved] also unrasiert. Hier ist der Haarfreie Intimbereich gemeint."
+        vorlieben_erklaerung(20) = "Bukkake - Wenn der Männliche Partner dem anderen auf das Gesicht spritzt."
+        vorlieben_erklaerung(21) = "Butt Plug - Ein Sexspielzeug, welches in den Po eingeführt wird und wie ein [Stöpsel] getragen werden kann"
+        vorlieben_erklaerung(22) = "Cameltoe - Wenn man die Form der Vulva durch ein Kleidungstück erkennen kann, zum Beispiel Leggins, Höschen, Hosen,..."
+        vorlieben_erklaerung(23) = "!Ihre Werbung hier! - Mann muss ja auch mal Spaß haben dürfen!"
+        vorlieben_erklaerung(24) = "Tentacle - Die integration von Oktopden in das Sexspiel. Ein fetisch welcher in Japan entstanden ist."
+        vorlieben_erklaerung(25) = "Cartoon - Allgemeines interesse an gezeichnetem Sexuellen Dingen, auch Hentai zählt dazu."
+        vorlieben_erklaerung(26) = "Chastity Belt - Enthaltsamkeitsgürtel, dieser verhindert die Berührung von dem Intimbereich und fällt dadurch in den Bereich BDSM."
+        vorlieben_erklaerung(27) = "Clamp - Klammern, diese können an verschiedenen Körperstellen eingesetzt werden. Klassich wären Nippel, Klitoris, empfindliche Bereiche."
+        vorlieben_erklaerung(28) = "Clothed Pissing - Das befeuchten von Anziehsachen, die Art und Menge ist dabei offen. Auch durch Squirten kann dabei die Kleidung [Nass] werden."
+        vorlieben_erklaerung(29) = "Roleplay - Rollenspiel, sei es der Polizist, die Schülerin oder sonstiges. Alles wo Rollen eingenommen werden."
+        vorlieben_erklaerung(30) = "Creampie - Das Abpritzen des Mannes in Körperöffnungen der Partnerin."
+        vorlieben_erklaerung(31) = "Crotchless Panties - Höschen, welche an der Vagina eine Öffnung haben und so beim Liebesspiel nicht extra ausgezogen werden müssen."
+        vorlieben_erklaerung(32) = "Cuckold Humiliation - Der Partner muss zusehen, während der andere mit einer dritten Person Geschlechtsverkehr hat."
+        vorlieben_erklaerung(33) = "Cum On Boobs - Das Abspritzen des Mannes auf die Brüste der Partnerin."
+        vorlieben_erklaerung(34) = "Cum In Mouth - Das Abspritzen des Mannes in den Mund der Partnerin."
+        vorlieben_erklaerung(35) = "Cum In Pussy - Das Abspritzen des Mannes in die Vagina der Partnerin."
+        vorlieben_erklaerung(36) = "Cum On Ass - Das Abspritzen des Mannes auf den po der Partnerin."
+        vorlieben_erklaerung(37) = "Double Anal Penetration - Die Stimmulation durch 2 Objekte in den Po. Zum Beispiel: Penis und Dildo, Plug und Penis,..."
+        vorlieben_erklaerung(38) = "Deepthroat - Durch das tiefe einführen des Penis in den Mund, eine besondere Stimmulation beim BlowJob erreichen. Oft in BDSM Situationen, da so auch eine gewisse Dominaz gezeigt werden kann."
+        vorlieben_erklaerung(39) = "Diaper - Windeln beim Liebesspiel, oft in kombination mit Pinkelvorlieben."
+        vorlieben_erklaerung(40) = "Dirty Talk - Meist via Chat, das schreiben von sexuellen Nachrichten."
+        vorlieben_erklaerung(41) = "Doctor / Nurse"
+        vorlieben_erklaerung(42) = "Doggystyle"
+        vorlieben_erklaerung(43) = "Double Toying"
+        vorlieben_erklaerung(44) = "Electrified"
+        vorlieben_erklaerung(45) = "Enema"
+        vorlieben_erklaerung(46) = "Office Sex"
+        vorlieben_erklaerung(47) = "Face Fuck"
+        vorlieben_erklaerung(48) = "Face Sitting"
+        vorlieben_erklaerung(49) = "Farting"
+        vorlieben_erklaerung(50) = "Femdom"
+        vorlieben_erklaerung(51) = "Fingering Orgasm"
+        vorlieben_erklaerung(52) = "Fisting"
+        vorlieben_erklaerung(53) = "Flogger Whip"
+        vorlieben_erklaerung(54) = "Feeding"
+        vorlieben_erklaerung(55) = "Footjob"
+        vorlieben_erklaerung(56) = "Foursome"
+        vorlieben_erklaerung(57) = "Furry"
+        vorlieben_erklaerung(58) = "Wax"
+        vorlieben_erklaerung(59) = "Gagging"
+        vorlieben_erklaerung(60) = "Gangbang"
+        vorlieben_erklaerung(61) = "Gaping Hole"
+        vorlieben_erklaerung(62) = "Gloryhole"
+        vorlieben_erklaerung(63) = "Gloves"
+        vorlieben_erklaerung(64) = "Romantic Sex"
+        vorlieben_erklaerung(65) = "Biting"
+        vorlieben_erklaerung(66) = "Gynecologist"
+        vorlieben_erklaerung(67) = "Missionary"
+        vorlieben_erklaerung(68) = "Hair Pulling"
+        vorlieben_erklaerung(69) = "Vegetable"
+        vorlieben_erklaerung(70) = "Handcuffed"
+        vorlieben_erklaerung(71) = "Handjob"
+        vorlieben_erklaerung(72) = "Humiliation"
+        vorlieben_erklaerung(73) = "Inflatable Dildo"
+        vorlieben_erklaerung(74) = "Insertion"
+        vorlieben_erklaerung(75) = "Vaginal Cumshot"
+        vorlieben_erklaerung(76) = "Vacuum"
+        vorlieben_erklaerung(77) = "Urethra"
+        vorlieben_erklaerung(78) = "Leather"
+        vorlieben_erklaerung(79) = "Lingerie"
+        vorlieben_erklaerung(80) = "Machine Fucking"
+        vorlieben_erklaerung(81) = "Masturbating"
+        vorlieben_erklaerung(82) = "No Panties"
+        vorlieben_erklaerung(83) = "Unshaved"
+        vorlieben_erklaerung(84) = "Oiled"
+        vorlieben_erklaerung(85) = "On Her Knees"
+        vorlieben_erklaerung(86) = "Ball Sucking"
+        vorlieben_erklaerung(87) = "Peehole"
+        vorlieben_erklaerung(88) = "Pegging"
+        vorlieben_erklaerung(89) = "Pissed On"
+        vorlieben_erklaerung(90) = "Pissing"
+        vorlieben_erklaerung(91) = "Prolapse"
+        vorlieben_erklaerung(92) = "Prostate Massage"
+        vorlieben_erklaerung(93) = "Public Anal Sex"
+        vorlieben_erklaerung(94) = "Pussy Stretching"
+        vorlieben_erklaerung(95) = "Pussy Eating"
+        vorlieben_erklaerung(96) = "Underwater"
+        vorlieben_erklaerung(97) = "Remote Toy"
+        vorlieben_erklaerung(98) = "Toys"
+        vorlieben_erklaerung(99) = "Shower Sex"
+        vorlieben_erklaerung(100) = "Self Fisting"
+        vorlieben_erklaerung(101) = "Sex Tape"
+        vorlieben_erklaerung(102) = "Share Wife"
+        vorlieben_erklaerung(103) = "Slave / Master (Sub/Dom)"
+        vorlieben_erklaerung(104) = "Forbidden Orgasm"
+        vorlieben_erklaerung(105) = "Sniffing Panties"
+        vorlieben_erklaerung(106) = "Human Toilet"
+        vorlieben_erklaerung(107) = "Speculum"
+        vorlieben_erklaerung(108) = "Spit"
+        vorlieben_erklaerung(109) = "Public Sex"
+        vorlieben_erklaerung(110) = "Squirt"
+        vorlieben_erklaerung(111) = "Strap-On"
+        vorlieben_erklaerung(112) = "Titjob"
+        vorlieben_erklaerung(113) = "Threesome"
+        vorlieben_erklaerung(114) = "Tit Slap"
+        vorlieben_erklaerung(115) = "Zoophilie - Die integration von tieren in das Liebesspiel."
+
+
+
+
+    End Sub
 
     Public Sub Auswerten_Click(sender As Object, e As EventArgs) Handles Auswerten.Click
-
         Dim i As Integer = 0
         Dim zurucksetzten = 0
         Dim vorliebend1() As String = System.IO.File.ReadAllLines(path1)
@@ -820,7 +959,7 @@ Public Class Haupt
             ElseIf Browser = "Edge" Then
                 Process.Start(("C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"), "https://www.xnxx.com/search/" + aString)
             ElseIf Browser = "Unbekannt" Then
-
+                MsgBox("Es wurde kein passender Browser gefunden. Bitte FireFox oder Edge installieren.", vbOKOnly, "Fehler")
                 Me.Close()
                 dr = DialogResult.OK
             End If
@@ -854,7 +993,7 @@ Public Class Haupt
 
     End Sub
 
-    Private Sub Haupt_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+    Private Sub Haupt_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
 
 
 
@@ -975,4 +1114,6 @@ Public Class Haupt
         End If
 
     End Sub
+
+
 End Class
