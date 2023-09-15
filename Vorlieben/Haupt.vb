@@ -610,8 +610,8 @@ Public Class Haupt
 
 
         vorlieben_erklaerung(0) = "Vorlieben. Die App - So heißt dei App bzw. das Programm was du gerade ausführst."
-        vorlieben_erklaerung(1) = "All Holes - Bedeutet interaktion, mit allen [Öffnungen] also zum Beispiel Mund, Vagina, Arsch."
-        vorlieben_erklaerung(2) = "Anal - Anal ist der Geschlechtsverkehr mit dem Arsch."
+        vorlieben_erklaerung(1) = "All Holes - Bedeutet interaktion, mit allen [Öffnungen] also zum Beispiel Mund, Vagina, Po."
+        vorlieben_erklaerung(2) = "Anal - Anal ist der Geschlechtsverkehr mit dem Po."
         vorlieben_erklaerung(3) = "Anal Beads - Meistens Kugeln an einem Band, welche in den Po eingeführt werden."
         vorlieben_erklaerung(4) = "Anal Creampie - Das abspritzen in den Po, mit gewolltem tropfen aus dem Po."
         vorlieben_erklaerung(5) = "Anal Dildo - Die stimmulierung des po mit hilfe eines Dildos."
@@ -705,25 +705,25 @@ Public Class Haupt
         vorlieben_erklaerung(93) = "Cabling - Kabbeln und leichtes kämpfen im Bett."
         vorlieben_erklaerung(94) = "Pussy Stretching - Das dehnen der vagina mit Spielzeugen und den Fingern."
         vorlieben_erklaerung(95) = "Pussy Eating - Das Orale befriedigen der partnerin mit dem Mund und der Zunge."
-        vorlieben_erklaerung(96) = "Underwater"
-        vorlieben_erklaerung(97) = "Remote Toy"
-        vorlieben_erklaerung(98) = "Mirror"
-        vorlieben_erklaerung(99) = "Shower Sex"
-        vorlieben_erklaerung(100) = "Self Fisting"
-        vorlieben_erklaerung(101) = "Sex Tape"
-        vorlieben_erklaerung(102) = "Share Wife"
-        vorlieben_erklaerung(103) = "Slave / Master (Sub/Dom)"
-        vorlieben_erklaerung(104) = "Forbidden Orgasm"
-        vorlieben_erklaerung(105) = "Sniffing Panties"
-        vorlieben_erklaerung(106) = "Human Toilet"
-        vorlieben_erklaerung(107) = "Speculum"
-        vorlieben_erklaerung(108) = "Spit"
-        vorlieben_erklaerung(109) = "Public Sex"
-        vorlieben_erklaerung(110) = "Squirt"
-        vorlieben_erklaerung(111) = "Strap-On"
-        vorlieben_erklaerung(112) = "Titjob"
-        vorlieben_erklaerung(113) = "Threesome"
-        vorlieben_erklaerung(114) = "Tit Slap"
+        vorlieben_erklaerung(96) = "Underwater - Unterwasser bzw. in Pools, Seen oder dem Meer."
+        vorlieben_erklaerung(97) = "Remote Toy - Ferngesteuerte Spielzeuge"
+        vorlieben_erklaerung(98) = "Mirror - Sex vor einem Spiegel."
+        vorlieben_erklaerung(99) = "Shower Sex - Sex unter der Dusche,"
+        vorlieben_erklaerung(100) = "Self Fisting - Sich selber Fisten, also mit der gesamten Faust befriedigen."
+        vorlieben_erklaerung(101) = "Sex Tape - Videoaufnahmen während bzw. von dem Sex."
+        vorlieben_erklaerung(102) = "Share Wife - Die eigene Frau mit jemand anderem teilen."
+        vorlieben_erklaerung(103) = "Slave / Master (Sub/Dom) - Ein dominanter partner der den anderem befehle etc. geben kann und darf. Die Praxis der Unterwürfigkeit."
+        vorlieben_erklaerung(104) = "Forbidden Orgasm - Den partner bis kurz vor den Orgasmus bringen, dann aber den Höhepunkt verbieten und damit den Partner ärgern."
+        vorlieben_erklaerung(105) = "Sniffing Panties - Getragene Höschen bzw. Unterwäsche dem Partner geben bzw. überlassen."
+        vorlieben_erklaerung(106) = "Human Toilet - Den Partner als Toilette benutzen, verschiedene Formen und Arten sind möglich."
+        vorlieben_erklaerung(107) = "Speculum - Gynikologisches Spielzeug, welches die Vagina oder den Po spreizen kann."
+        vorlieben_erklaerung(108) = "Spit - Spucken, nicht nur den Partner anspucken, sondern auch beim blasen Speichel ungehindert tropfen lassen."
+        vorlieben_erklaerung(109) = "Public Sex - Sex in der Öffenlichkeit."
+        vorlieben_erklaerung(110) = "Squirt - Das Abpritzen der Frau durch stimulation."
+        vorlieben_erklaerung(111) = "Strap-On - Ein Umschnall-Spielzeug, welches die Frau tragen kann und damit den Partner befriedigen kann."
+        vorlieben_erklaerung(112) = "Titjob - Den Penis zwischen die Brüste der Partnerin klemmen und damit Masturbieren."
+        vorlieben_erklaerung(113) = "Threesome - Der klassische Dreier."
+        vorlieben_erklaerung(114) = "Tit Slap - Das schlagen der Brüste mit der Hand oder Hilfmitteln."
         vorlieben_erklaerung(115) = "Zoophilie - Die integration von Tieren in das Liebesspiel."
 
 
@@ -1002,10 +1002,10 @@ Public Class Haupt
 
             'Programm beenden und abgegebene Stimmen löschen
             If System.IO.File.Exists(path1) Then
-                My.Computer.FileSystem.DeleteFile(path1)
+                'My.Computer.FileSystem.DeleteFile(path1)
             End If
             If System.IO.File.Exists(path2) Then
-                My.Computer.FileSystem.DeleteFile(path2)
+                'My.Computer.FileSystem.DeleteFile(path2)
             End If
 
 
