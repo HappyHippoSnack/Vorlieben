@@ -26,13 +26,9 @@
 
     End Sub
 
-
     Private Sub Anleitung_Click(sender As Object, e As EventArgs) Handles Anleitung.Click
-
         Anleitung_Nutzer.Show()
+        System.Threading.Thread.Sleep(100)
         Me.Hide()
-
     End Sub
-
-
 End Class

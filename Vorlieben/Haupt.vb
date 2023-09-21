@@ -67,6 +67,7 @@ Public Class Haupt
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
         'zähler alle auf 0 setzten
         Dim zaehler = 0
         Dim jaCounter1 = 0
@@ -609,14 +610,14 @@ Public Class Haupt
         End If
 
 
-        vorlieben_erklaerung(0) = "Vorlieben. Die App - So heißt dei App bzw. das Programm was du gerade ausführst."
-        vorlieben_erklaerung(1) = "All Holes - Bedeutet interaktion, mit allen [Öffnungen] also zum Beispiel Mund, Vagina, Po."
+        vorlieben_erklaerung(0) = "Vorlieben. Die App - So heißt die App bzw. das Programm welches du gerade nutzt."
+        vorlieben_erklaerung(1) = "All Holes - Bedeutet stimmulation, mit allen [Öffnungen] also zum Beispiel Mund, Vagina, Po."
         vorlieben_erklaerung(2) = "Anal - Anal ist der Geschlechtsverkehr mit dem Po."
         vorlieben_erklaerung(3) = "Anal Beads - Meistens Kugeln an einem Band, welche in den Po eingeführt werden."
         vorlieben_erklaerung(4) = "Anal Creampie - Das abspritzen in den Po, mit gewolltem tropfen aus dem Po."
-        vorlieben_erklaerung(5) = "Anal Dildo - Die stimmulierung des po mit hilfe eines Dildos."
+        vorlieben_erklaerung(5) = "Anal Dildo - Die stimmulierung des Po mit hilfe eines Dildos."
         vorlieben_erklaerung(6) = "Anal Fisting - Das stimmulieren des Po mit der gesamten Hand."
-        vorlieben_erklaerung(7) = "Anal Gape - Durch dehnung und training des Po, dafür sorgen, dass der Po quasi offen bleibt für einen Moment."
+        vorlieben_erklaerung(7) = "Anal Gape - Durch dehnung und training des Po, dafür sorgen, dass der Po einen kurzen Moment geöffnet bleibt."
         vorlieben_erklaerung(8) = "Ass Eating - Das Orale stimmulieren des Po vom Partner."
         vorlieben_erklaerung(9) = "Assfingering - Das stimmulieren des Po durch finger."
         vorlieben_erklaerung(10) = "Ball Licking - Lecken der Hoden durch den Partner."

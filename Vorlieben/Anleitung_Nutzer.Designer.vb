@@ -22,50 +22,49 @@ Partial Class Anleitung_Nutzer
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Anleitung_Nutzer))
-        Me.schliessen = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.SuspendLayout()
-        '
-        'schliessen
-        '
-        Me.schliessen.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.schliessen.Location = New System.Drawing.Point(361, 352)
-        Me.schliessen.Name = "schliessen"
-        Me.schliessen.Size = New System.Drawing.Size(85, 31)
-        Me.schliessen.TabIndex = 0
-        Me.schliessen.Text = "Schließen"
-        Me.schliessen.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox1.Location = New System.Drawing.Point(12, 113)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(776, 207)
-        Me.TextBox1.TabIndex = 3
-        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Anleitung_Nutzer
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.ControlBox = False
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.schliessen)
-        Me.MaximizeBox = False
-        Me.Name = "Anleitung_Nutzer"
-        Me.Text = "Anleitung"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Anleitung_Nutzer))
+        schliessen = New Button()
+        TextBox1 = New TextBox()
+        SuspendLayout()
+        ' 
+        ' schliessen
+        ' 
+        schliessen.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        schliessen.Location = New Point(361, 352)
+        schliessen.Name = "schliessen"
+        schliessen.Size = New Size(85, 31)
+        schliessen.TabIndex = 0
+        schliessen.Text = "Schließen"
+        schliessen.UseVisualStyleBackColor = True
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.BackColor = SystemColors.Control
+        TextBox1.BorderStyle = BorderStyle.None
+        TextBox1.Enabled = False
+        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox1.Location = New Point(12, 113)
+        TextBox1.Multiline = True
+        TextBox1.Name = "TextBox1"
+        TextBox1.ReadOnly = True
+        TextBox1.Size = New Size(776, 207)
+        TextBox1.TabIndex = 3
+        TextBox1.Text = resources.GetString("TextBox1.Text")
+        TextBox1.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Anleitung_Nutzer
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        ControlBox = False
+        Controls.Add(TextBox1)
+        Controls.Add(schliessen)
+        MaximizeBox = False
+        Name = "Anleitung_Nutzer"
+        Text = "Anleitung"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents schliessen As Button
